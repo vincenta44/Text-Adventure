@@ -20,7 +20,9 @@ sound_c,
 path_f,
 town,
 follow_path,
-follow_sound)
+follow_sound
+)
+
 ###### Unit Tests #####
 
 #render_introduction()
@@ -110,7 +112,7 @@ assert_equal(render_enemy(test_world), sound_c(test_world))
 
 #tunnel(x)
 test_world = create_world()
-assert_equal(tunnel(world), '''
+assert_equal(tunnel(test_world), '''
 You have nothing...you look around and find a rock.
 You hurl the rock at the Troll, it only get's more upset.
 You try to run, but the Troll catches up, grabs you and slams you around
@@ -126,20 +128,23 @@ The troll is now laying at your feet...It is slain.
 ''')
 
 #bear(x)
-assert_equal(bear(world), '''
+test_world = create_world()
+assert_equal(bear(test_world), '''
 You stare at the bear in terror.
 It rushes you and attacks.
 You have no way of defending yourself and you get mauled and die.
 ''')
 
 #path_e(x)
-assert_equal(path_e(world), '''
+test_world = create_world()
+assert_equal(path_e(test_world), '''
 The witch disinigrates you immediatley.
 How did you even make it this far with no armor or weapon?
 ''')
 
 #dragon_fight(x)
-assert_equal(dragon_fight(world), '''
+test_world = create_world()
+assert_equal(dragon_fight(test_world), '''
 You walk up to the dragon...nothing in hand...and you bow.
 She creeps up on you and sniffs around.
 She drags you to the middle of the room.
@@ -149,7 +154,8 @@ You are dead.
 ''')
 
 #dragon_fight_sword(x)
-assert_equal(dragon_fight_sword(world), '''
+test_world = create_world()
+assert_equal(dragon_fight_sword(test_world), '''
 You walk in and pull out you sword.
 You charge...but before you get there she
 blows fire at you and disengrates you completley.
@@ -157,7 +163,8 @@ You are dead.
 ''')
 
 #dragon_fight_spells(x)
-assert_equal(dragon_fight_spells(world), '''
+test_world = create_world()
+assert_equal(dragon_fight_spells(test_world), '''
 You walk in and wield your spells.
 You charge...but before you get there she
 blows fire at you and disengrates you completley.
@@ -165,7 +172,8 @@ You are dead.
 ''')
 
 #deep_cave(x)
-assert_equal(deep_cave(world), '''
+test_world = create_world()
+assert_equal(deep_cave(test_world), '''
 A Giant Spider drops down right on your head.
 You have nothing to defend yourself ad you swing around in terror.
 The spider ties you up...
@@ -174,27 +182,31 @@ Then eats you...
 ''')
 
 #glowing_house(x)
-assert_equal(glowing_house(world), None)
+test_world = create_world()
+assert_equal(glowing_house(test_world), None)
 
 #sound_c(x)
-assert_equal(sound_c(world), '''
+test_world = create_world()
+assert_equal(sound_c(test_world), '''
 Goblins jump all over you and stab you until you die.
 ''')
 
 #path_f(x)
-assert_equal(path_f(world), world['map']['Path A']['about'])
+test_world = create_world()
+assert_equal(path_f(test_world), world['map']['Path A']['about'])
 
 #town(x, y)
-assert_equal(town(world, "Benedek"),
+test_world = create_world()
+assert_equal(town(test_world, "Benedek"),
             '''
 You chose Benedek. Good choice.
 ''')
-assert_equal(town(world, "Frons"),
+assert_equal(town(test_world, "Frons"),
              '''
 You chose Frons. Poor choice.
 '''
 )
-assert_equal(town(world, "Adjorn"),
+assert_equal(town(test_world, "Adjorn"),
              '''
 You chose Adjorn. Great choice!
 '''
