@@ -8,6 +8,7 @@ create_map,
 render,
 render_location,
 render_enemy,
+render_player,
 tunnel,
 bear,
 path_e,
@@ -110,6 +111,10 @@ assert_equal(render_enemy(test_world), deep_cave(test_world))
 test_world['player']['location'] = 'Sound C'
 assert_equal(render_enemy(test_world), sound_c(test_world))
 
+#render_player(x)
+test_world = create_world()
+assert_equal(render_player(), )
+
 #tunnel(x)
 test_world = create_world()
 assert_equal(tunnel(test_world), '''
@@ -138,7 +143,7 @@ You have no way of defending yourself and you get mauled and die.
 #path_e(x)
 test_world = create_world()
 assert_equal(path_e(test_world), '''
-The witch disinigrates you immediatley.
+The witch disintegrates you immediately.
 How did you even make it this far with no armor or weapon?
 ''')
 
@@ -158,7 +163,7 @@ test_world = create_world()
 assert_equal(dragon_fight_sword(test_world), '''
 You walk in and pull out you sword.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 ''')
 
@@ -167,7 +172,7 @@ test_world = create_world()
 assert_equal(dragon_fight_spells(test_world), '''
 You walk in and wield your spells.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 ''')
 
