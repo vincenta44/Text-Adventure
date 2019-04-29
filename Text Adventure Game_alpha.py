@@ -1,29 +1,4 @@
-"""
-##### 0) Header #####
-# Text Adventure Game
-A chance to make your own Text Adventure Game.
-This is an INDIVIDUAL project. Do not consult with others or share code.
-Refer to the instructions on Canvas for more information.
-
-# When You Are Done
-When you pass all tests, remember to clean and document your code.
-Be sure to unit test and document your functions.
-"""
-
-##### 1) Author Info #####
-
-# Change these three fields
-__author__ = "vincenta@udel.edu"
-__title__ = "The Impossible Journey"
-__description__ = "You are an adventurer who needs to kill a Dragon. Finding things on the way will help with this adventure. Watch out for enemies!"
-
-# Leave these two fields unchanged
-__version__ = 1
-__date__ = "Spring 2019"
-
-
-##### 2) Record Definitions #####
-# Add a new record and modify the existing ones to fit your game.
+##### Record Definitions #####
 
 '''
 Records:
@@ -57,8 +32,7 @@ Location:
 
 '''
 
-##### 3) Core Game Functions #####
-# Implement the following to create your game.
+##### Core Game Functions #####
 
 def render_introduction():
     '''
@@ -1970,10 +1944,7 @@ def choose(options):
         return choice
 
 
-###### 4) Win/Lose Paths #####
-# The autograder will use these to try out your game
-# WIN_PATH (list[str]): A list of commands that win the game when entered
-# LOSE_PATH (list[str]): A list of commands that lose the game when entered.
+###### Win/Lose Paths #####
 
 WIN_PATH = [
     "Go to Woods",
@@ -2024,8 +1995,7 @@ LOSE_PATH = [
     "Follow the Tracks"
     ]
 
-###### 5) Unit Tests #####
-# Write unit tests here
+###### Unit Tests #####
 
 from cisc108 import assert_equal
 
@@ -2226,8 +2196,7 @@ You are at a turn in the road.
 You are now standing infront of the Dragon's den.
 ''')
 
-###### 6) Main Function #####
-# Do not modify this area
+###### Main Function #####
 
 def main():
     '''
