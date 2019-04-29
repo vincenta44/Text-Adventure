@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1332">
-              <caret line="1653" lean-forward="true" selection-start-line="1653" selection-end-line="1653" />
+            <state relative-caret-position="306">
+              <caret line="1757" column="27" selection-start-line="1757" selection-start-column="27" selection-end-line="1757" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -91,12 +89,12 @@
       <updated>1556576282522</updated>
       <workItem from="1556576285225" duration="197000" />
       <workItem from="1556576560669" duration="7000" />
-      <workItem from="1556576632927" duration="866000" />
+      <workItem from="1556576632927" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1070000" />
+    <option name="totallyTimeSpent" value="1178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -108,10 +106,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1420" height="753" extended-state="0" />
+    <frame x="20" y="43" width="1420" height="753" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -147,8 +145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1332">
-          <caret line="1653" lean-forward="true" selection-start-line="1653" selection-end-line="1653" />
+        <state relative-caret-position="306">
+          <caret line="1757" column="27" selection-start-line="1757" selection-start-column="27" selection-end-line="1757" selection-end-column="27" />
         </state>
       </provider>
     </entry>
