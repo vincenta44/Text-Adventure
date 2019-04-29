@@ -886,7 +886,7 @@ You are dead.
         return '''
 You walk in and pull out you sword.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 '''
 
@@ -1031,7 +1031,7 @@ You are dead.
         return '''
 You walk in and wield your spells.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 '''
 
