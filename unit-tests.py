@@ -1,4 +1,4 @@
-from nose.tools import assert_equals
+from nose import assert_equal
 ###### Unit Tests #####
 
 #render_introduction()
@@ -22,7 +22,7 @@ Have a safe journey and do not come back without the Dragon's treasure.
 
 #create_player()
 player = create_player()
-assert_equals(isinstance(player, dict), True)
+assert_equal(isinstance(player, dict), True)
 assert_equal(len(player.keys()), 6)
 assert_equal("location" in player, True)
 assert_equal(player['location'], 'Path A')
