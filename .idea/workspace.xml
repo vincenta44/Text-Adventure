@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-    </list>
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3829">
+            <state relative-caret-position="4923">
               <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
               <folding>
                 <element signature="e#1029#2336#0" />
@@ -113,7 +110,7 @@
       <updated>1556576282522</updated>
       <workItem from="1556576285225" duration="197000" />
       <workItem from="1556576560669" duration="7000" />
-      <workItem from="1556576632927" duration="2015000" />
+      <workItem from="1556576632927" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -157,11 +154,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556578805466</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="typos">
+      <created>1556579172259</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556579172259</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2219000" />
+    <option name="totallyTimeSpent" value="2246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,8 +177,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="46" width="1420" height="753" extended-state="0" />
-    <editor active="true" />
+    <frame x="11" y="41" width="1420" height="753" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.2525399" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
@@ -256,7 +259,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3829">
+        <state relative-caret-position="4923">
           <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
           <folding>
             <element signature="e#1029#2336#0" />
