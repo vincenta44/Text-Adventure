@@ -890,7 +890,6 @@ blows fire at you and disintegrates you completely.
 You are dead.
 '''
 
-
 def dragon_fight_spells(world):
     '''
     Consumes a world and updates the world to its given state. Returns a statement for this given location that is dynamic to the states of the world.
@@ -1740,6 +1739,7 @@ You found nothing.
         return '''
 You have used up all the power the amulet has.
 '''
+
 def see_inventory(world):
     '''
     Consumes a world and returns a statement showing the players inventory.

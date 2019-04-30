@@ -113,7 +113,7 @@ assert_equal(render_enemy(test_world), sound_c(test_world))
 
 #render_player(x)
 test_world = create_world()
-assert_equal(render_player(), )
+assert_equal(render_player(test_world), "Your health is 5/5\n")
 
 #tunnel(x)
 test_world = create_world()
@@ -234,5 +234,5 @@ test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
 sound_c(test_world)
 assert_equal(test_world['map']['Path H']['about'], '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 ''')
