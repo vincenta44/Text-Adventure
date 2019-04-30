@@ -16,14 +16,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4923">
+            <state relative-caret-position="321">
               <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
               <folding>
                 <element signature="e#1029#2336#0" />
                 <element signature="e#2362#2605#0" />
                 <element signature="e#2632#2951#0" />
                 <element signature="e#70638#72242#0" />
-                <element signature="e#72237#72862#0" />
               </folding>
             </state>
           </provider>
@@ -63,6 +62,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,7 +74,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -111,6 +110,7 @@
       <workItem from="1556576285225" duration="197000" />
       <workItem from="1556576560669" duration="7000" />
       <workItem from="1556576632927" duration="2042000" />
+      <workItem from="1556604016282" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -165,7 +165,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2246000" />
+    <option name="totallyTimeSpent" value="2313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -179,7 +179,7 @@
   <component name="ToolWindowManager">
     <frame x="11" y="41" width="1420" height="753" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.2525399" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.25616837" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -194,7 +194,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32980332" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.30257186" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.580938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -230,6 +230,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
@@ -259,14 +273,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4923">
+        <state relative-caret-position="321">
           <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
           <folding>
             <element signature="e#1029#2336#0" />
             <element signature="e#2362#2605#0" />
             <element signature="e#2632#2951#0" />
             <element signature="e#70638#72242#0" />
-            <element signature="e#72237#72862#0" />
           </folding>
         </state>
       </provider>
