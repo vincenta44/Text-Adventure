@@ -775,7 +775,7 @@ Goblins jump all over you and stab you until you die.
 ''')
 
 test_world = create_world()
-test_world['player']['inventory'] = ["Armor", "Upgraded Armor"]
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
 test_world['player']['follower'] = True
 test_world['player']['follower num'] = 3
 assert_equal(sound_c(test_world), '''
@@ -785,10 +785,152 @@ and throw others off you back. Frons is fighting well behind you.
 The goblins manage to slice you and Frons a little bit, but you manage the kill them.
 The goblin group is slain.
 ''')
-assert_equal(test_world['map']['Path H']['about'],'''
+assert_equal(test_world['map']['Path H']['about'], '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 ''' )
+test_world['player']['health'] = 1
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice you and Frons. You guys start bleeding out.
+The goblins start gathering up and overcoming you.
+You both lay there and die.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
+assert_equal(sound_c(test_world), '''
+The goblins surround you. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight, but with will and power
+you knock them all down..
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'], '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
+test_world['player']['health'] = 2
+assert_equal(sound_c(test_world), '''
+The goblins surround you. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight and start bleeding out.
+You fall down and get overcome by goblins.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and Frons use up most of your energy, but you manage the kill them.
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'], '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
+test_world['player']['health'] = 2
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and Frons use all of your energy and it's not enough.
+You get overcome by the goblins.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor", "Upgraded Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice you and Frons a little bit, but you manage the kill them.
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'], '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
+test_world['player']['health'] = 1
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice you and Frons. You guys start bleeding out.
+The goblins start gathering up and overcoming you.
+You both lay there and die.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor", "Upgraded Armor"]
+assert_equal(sound_c(test_world), '''
+The goblins surround you. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight, but with will and power
+you knock them all down..
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'], '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
+test_world['player']['health'] = 2
+assert_equal(sound_c(test_world), '''
+The goblins surround you. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight and start bleeding out.
+You fall down and get overcome by goblins.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast a few down
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and Frons use up most of your energy, but you manage the kill them.
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'], '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
+test_world['player']['health'] = 2
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast a few down
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and Frons use all of your energy and it's not enough.
+You get overcome by the goblins.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
 
 #path_f(x)
 test_world = create_world()
