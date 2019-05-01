@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +17,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
+            <state relative-caret-position="154">
+              <caret line="621" column="30" selection-start-line="621" selection-start-column="30" selection-end-line="621" selection-end-column="30" />
               <folding>
                 <element signature="e#1029#2336#0" />
                 <element signature="e#2362#2605#0" />
                 <element signature="e#2632#2951#0" />
-                <element signature="e#70638#72242#0" />
+                <element signature="e#2981#3603#0" />
+                <element signature="e#3627#11197#0" />
+                <element signature="e#11222#13608#0" />
+                <element signature="e#13631#15902#0" />
+                <element signature="e#15927#19920#0" />
+                <element signature="e#19951#21108#0" />
+                <element signature="e#21145#33677#0" />
+                <element signature="e#21964#25317#0" />
+                <element signature="e#22187#22846#0" />
+                <element signature="e#23010#23666#0" />
+                <element signature="e#23734#25317#0" />
+                <element signature="e#23915#24489#0" />
+                <element signature="e#24703#25274#0" />
+                <element signature="e#25374#28147#0" />
+                <element signature="e#28186#31697#0" />
+                <element signature="e#31746#33121#0" />
+                <element signature="e#33148#33467#0" />
+                <element signature="e#33486#33677#0" />
+                <element signature="e#33715#40386#0" />
+                <element signature="e#40414#41896#0" />
+                <element signature="e#41928#44242#0" />
+                <element signature="e#44268#52284#0" />
+                <element signature="e#52309#53886#0" />
+                <element signature="e#53918#55230#0" />
+                <element signature="e#55255#55574#0" />
+                <element signature="e#55608#56111#0" />
+                <element signature="e#56142#56988#0" />
+                <element signature="e#57020#57435#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="565" column="42" lean-forward="true" selection-start-line="565" selection-start-column="42" selection-end-line="565" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#530#1656#0" />
+                <element signature="e#4487#4692#0" />
+                <element signature="e#5495#5862#0" />
+                <element signature="e#5899#5955#0" />
+                <element signature="e#5898#6265#0" />
+                <element signature="e#6468#6835#0" />
+                <element signature="e#6883#6939#0" />
+                <element signature="e#5198#5331#0" />
+                <element signature="e#7158#7471#0" />
+                <element signature="e#7518#7586#0" />
+                <element signature="e#7686#7932#0" />
+                <element signature="e#7725#8038#0" />
+                <element signature="e#8089#8157#0" />
+                <element signature="e#7546#7653#0" />
+                <element signature="e#8809#8985#0" />
+                <element signature="e#9103#9635#0" />
+                <element signature="e#9705#10195#0" />
+                <element signature="e#10394#10913#0" />
+                <element signature="e#10988#11451#0" />
+                <element signature="e#11001#11238#0" />
+                <element signature="e#11337#11488#0" />
+                <element signature="e#12452#12727#0" />
+                <element signature="e#12976#13632#0" />
+                <element signature="e#13729#14388#0" />
+                <element signature="e#14766#15337#0" />
+                <element signature="e#15439#16013#0" />
+                <element signature="e#14915#15453#0" />
+                <element signature="e#16913#17389#0" />
+                <element signature="e#15644#16182#0" />
+                <element signature="e#18253#18814#0" />
+                <element signature="e#19069#19745#0" />
+                <element signature="e#19852#20458#0" />
+                <element signature="e#20790#21417#0" />
+                <element signature="e#21524#22155#0" />
+                <element signature="e#22406#22937#0" />
+                <element signature="e#22530#23097#0" />
+                <element signature="e#11589#11739#0" />
+                <element signature="e#11820#12000#0" />
+                <element signature="e#12170#12231#0" />
+                <element signature="e#12434#12473#0" />
+                <element signature="e#12528#12565#0" />
+                <element signature="e#12622#12661#0" />
+                <element signature="e#12817#12994#0" />
+                <element signature="e#13233#13322#0" />
               </folding>
             </state>
           </provider>
@@ -36,8 +123,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests.py" />
         <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/tests.py" />
       </list>
     </option>
   </component>
@@ -52,8 +139,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="41" />
+    <option name="y" value="23" />
     <option name="width" value="1420" />
     <option name="height" value="753" />
   </component>
@@ -97,6 +183,58 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.tests">
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text-Adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text-Adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.game" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,6 +249,7 @@
       <workItem from="1556576560669" duration="7000" />
       <workItem from="1556576632927" duration="2042000" />
       <workItem from="1556604016282" duration="67000" />
+      <workItem from="1556634838903" duration="6032000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -161,11 +300,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556579172259</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="unit tests">
+      <created>1556635191743</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556635191743</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added unit tests">
+      <created>1556637523197</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556637523197</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2313000" />
+    <option name="totallyTimeSpent" value="8345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -177,14 +330,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="41" width="1420" height="753" extended-state="0" />
+    <frame x="0" y="23" width="1420" height="753" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.25616837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.14731495" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39939487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -194,7 +348,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32980332" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.580938" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.22541603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -251,7 +405,13 @@
     <MESSAGE value="added test_world to unit tests." />
     <MESSAGE value="update" />
     <MESSAGE value="typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="typos" />
+    <MESSAGE value="unit tests" />
+    <MESSAGE value="added unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unit tests" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556640036054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text_Adventure$game.coverage" NAME="game Coverage Results" MODIFIED="1556635134677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codeop.py">
@@ -261,25 +421,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="174" column="50" selection-start-line="174" selection-start-column="50" selection-end-line="174" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="2015" selection-start-line="2015" selection-end-line="2015" />
+        <state relative-caret-position="154">
+          <caret line="621" column="30" selection-start-line="621" selection-start-column="30" selection-end-line="621" selection-end-column="30" />
           <folding>
             <element signature="e#1029#2336#0" />
             <element signature="e#2362#2605#0" />
             <element signature="e#2632#2951#0" />
-            <element signature="e#70638#72242#0" />
+            <element signature="e#2981#3603#0" />
+            <element signature="e#3627#11197#0" />
+            <element signature="e#11222#13608#0" />
+            <element signature="e#13631#15902#0" />
+            <element signature="e#15927#19920#0" />
+            <element signature="e#19951#21108#0" />
+            <element signature="e#21145#33677#0" />
+            <element signature="e#21964#25317#0" />
+            <element signature="e#22187#22846#0" />
+            <element signature="e#23010#23666#0" />
+            <element signature="e#23734#25317#0" />
+            <element signature="e#23915#24489#0" />
+            <element signature="e#24703#25274#0" />
+            <element signature="e#25374#28147#0" />
+            <element signature="e#28186#31697#0" />
+            <element signature="e#31746#33121#0" />
+            <element signature="e#33148#33467#0" />
+            <element signature="e#33486#33677#0" />
+            <element signature="e#33715#40386#0" />
+            <element signature="e#40414#41896#0" />
+            <element signature="e#41928#44242#0" />
+            <element signature="e#44268#52284#0" />
+            <element signature="e#52309#53886#0" />
+            <element signature="e#53918#55230#0" />
+            <element signature="e#55255#55574#0" />
+            <element signature="e#55608#56111#0" />
+            <element signature="e#56142#56988#0" />
+            <element signature="e#57020#57435#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="565" column="42" lean-forward="true" selection-start-line="565" selection-start-column="42" selection-end-line="565" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#530#1656#0" />
+            <element signature="e#4487#4692#0" />
+            <element signature="e#5495#5862#0" />
+            <element signature="e#5899#5955#0" />
+            <element signature="e#5898#6265#0" />
+            <element signature="e#6468#6835#0" />
+            <element signature="e#6883#6939#0" />
+            <element signature="e#5198#5331#0" />
+            <element signature="e#7158#7471#0" />
+            <element signature="e#7518#7586#0" />
+            <element signature="e#7686#7932#0" />
+            <element signature="e#7725#8038#0" />
+            <element signature="e#8089#8157#0" />
+            <element signature="e#7546#7653#0" />
+            <element signature="e#8809#8985#0" />
+            <element signature="e#9103#9635#0" />
+            <element signature="e#9705#10195#0" />
+            <element signature="e#10394#10913#0" />
+            <element signature="e#10988#11451#0" />
+            <element signature="e#11001#11238#0" />
+            <element signature="e#11337#11488#0" />
+            <element signature="e#12452#12727#0" />
+            <element signature="e#12976#13632#0" />
+            <element signature="e#13729#14388#0" />
+            <element signature="e#14766#15337#0" />
+            <element signature="e#15439#16013#0" />
+            <element signature="e#14915#15453#0" />
+            <element signature="e#16913#17389#0" />
+            <element signature="e#15644#16182#0" />
+            <element signature="e#18253#18814#0" />
+            <element signature="e#19069#19745#0" />
+            <element signature="e#19852#20458#0" />
+            <element signature="e#20790#21417#0" />
+            <element signature="e#21524#22155#0" />
+            <element signature="e#22406#22937#0" />
+            <element signature="e#22530#23097#0" />
+            <element signature="e#11589#11739#0" />
+            <element signature="e#11820#12000#0" />
+            <element signature="e#12170#12231#0" />
+            <element signature="e#12434#12473#0" />
+            <element signature="e#12528#12565#0" />
+            <element signature="e#12622#12661#0" />
+            <element signature="e#12817#12994#0" />
+            <element signature="e#13233#13322#0" />
           </folding>
         </state>
       </provider>

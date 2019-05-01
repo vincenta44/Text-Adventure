@@ -688,7 +688,7 @@ You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, but you stumble and fall.
 The dragon kills %s then eats you.
 You Died.
-''' % (follower, follower, follower, follower)
+''' % (follower, follower, follower, follower, follower)
                 if world['status'] == 'playing':
                     if_follower = False
                     world['status'] = 'won'
@@ -724,7 +724,7 @@ You Died.
 '''
                 if world['status'] == 'playing':
                     world['status'] = 'won'
-                    return'''
+                    return '''
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
 but its glow begins to fade. You wiggle around a bite and stab her neck.

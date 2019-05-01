@@ -136,6 +136,7 @@ You hurl the rock at the Troll, it only get's more upset.
 You try to run, but the Troll catches up, grabs you and slams you around
 until you die.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword"]
 assert_equal(tunnel(test_world), '''
@@ -156,6 +157,7 @@ You thrust forward, but the Troll turns around and knocks you back.
 You are cornered on the rocks. He slaps the sword out of your hand and crushes you.
 You died.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword", "Armor"]
 assert_equal(tunnel(test_world), '''
@@ -175,6 +177,7 @@ You stare at the bear in terror.
 It rushes you and attacks.
 You have no way of defending yourself and you get mauled and die.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword"]
 assert_equal(bear(test_world), '''
@@ -196,6 +199,7 @@ You thrash at it with your sword. The bear turns toward you and claws your chest
 You take a few too many slashes to the chest.
 You died.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword", "Armor"]
 assert_equal(bear(test_world), '''
@@ -217,6 +221,7 @@ assert_equal(path_e(test_world), '''
 The witch disintegrates you immediately.
 How did you even make it this far with no armor or weapon?
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword"]
 assert_equal(path_e(test_world), '''
@@ -226,6 +231,7 @@ You turn and slash the witches face,
 but she manifested a fireball and blew it straight through you.
 You died.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword", "Armor"]
 assert_equal(path_e(test_world), '''
@@ -253,6 +259,7 @@ Your armor withstands the blow and you pull your sword out,
 before you can slash she casts a fireball that melts through your armor and you.
 You died.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword", "Armor"]
 test_world['player']['follower'] = True
@@ -293,9 +300,11 @@ She lays back down on you and sleeps.
 You slowly get crushed and suffocate.
 You are dead.
 ''')
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Sword"]
 assert_equal(dragon_fight(test_world), dragon_fight_sword(test_world))
+
 test_world = create_world()
 test_world['player']['inventory'] = ["Spells"]
 assert_equal(dragon_fight(test_world), dragon_fight_spells(test_world))
@@ -308,6 +317,253 @@ You charge...but before you get there she
 blows fire at you and disintegrates you completely.
 You are dead.
 ''')
+test_world = create_world()
+
+test_world['player']['inventory'] = ["Sword", "Armor"]
+assert_equal(dragon_fight_sword(test_world), '''
+You walk in and pull out your sword.
+You armor doesn't seem so strong next to her scales.
+You charge and she swipes you with her tail.
+Your armor breaks apart and falls right off of you.
+You try to get up and move away, but she catches you and eats you.
+You are dead.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor", "Shield"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail, but you block it with your shield.
+You shield flies away from you, but you move forward.
+you climb her and throws you off her tail onto the cave wall.
+Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and jump onto her wing then to her back.
+You crawl up her neck and get to head, you stab your sword through her.
+She falls...You killed the dragon!
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 1
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail, but you block it with your shield.
+You shield flies away from you, but you move forward.
+you climb her and throws you off her tail onto the cave wall.
+Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and jump onto her wing then to her back.
+You crawl up her neck and get to head, but you stumble and fall.
+The dragon kills Benedek then eats you.
+You Died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+You jump up on her tail. In one motion she grabs Benedek with her teeth
+and throws you off her tail onto the cave wall.
+Benedek is on the ground not moving. Your armor stops glowing.
+You pick yourself up and run forward and jump onto her wing then to her back.
+You crawl up her neck and get to head, you stab your sword through her.
+She falls...You killed the dragon!
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+You jump up on her tail. In one motion she grabs Benedek with her teeth
+and throws you off her tail onto the cave wall.
+Benedek is on the ground not moving. Your armor stops glowing.
+You pick yourself up and run forward and jump onto her wing then to her back.
+You crawl up her neck and get to head, but you stumble and fall.
+The dragon kills Benedek then eats you.
+You Died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and run shouting battle cries.
+She bites at you, you armor withstands her jaw,
+but it's glow begins to fade. You wiggle around a bite and stab her neck.
+She throws herself up and charges her voice.
+You jump behind a rock as she blows red hot flames toward you.
+She burns you and melt part of your armor.
+You get up and charge after she is done.
+You slide under her head and slash her neck.
+Then you victoriously stand with you sword pointed up through her stomach.
+The dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 3
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and run shouting battle cries.
+She bites at you, you armor withstands her jaw,
+but its glow begins to fade. You wiggle around a bite and stab her neck.
+She throws herself up and charges her voice.
+You jump behind a rock as she blows red hot flames toward you.
+She burns you and melt part of your armor.
+You get up and charge after she is done.
+You try to slide under her neck but you trip.
+She stand over you and breathes fire on you.
+You Died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor", "Shield"]
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and run shouting battle cries.
+She bites at you, you armor withstands her jaw,
+but its glow begins to fade. You wiggle around a bite and stab her neck.
+She throws herself up and charges her voice.
+You pull up your shield and kneel behind it as she blows fire toward you.
+You shield melts under the heat so you charge.
+You run around the sides of the cave and throw her off.
+You jump high onto her wing and slice her with your sword.
+You run up her back and sink your sword in her head.
+The dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and run shouting battle cries.
+She bites at you, you armor withstands her jaw,
+but its glow begins to fade. You wiggle around a bite and stab her neck.
+She throws herself up and charges her voice.
+You pull up your shield and kneel behind it as she blows fire toward you.
+You shield melts under the heat so you charge.
+You run around the sides of the cave and throw her off.
+You jump high onto her wing and slice her with your sword.
+You run up her back but stumble and fall.
+She stand over you and breathes fire on you.
+You Died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around out of her vision.
+She clamps on Benedek with her jaw and flails him around.
+You stab her from behind and she lets go of Benedek.
+She whips you with her tail, knocking you back and causing your glowing armor to fade.
+While you are on the ground she stand tall and takes a snap at you.
+Benedek jumps in the way at the last second and takes the blow.
+He dies...but with haste you get up and slide underneath the dragon.
+You rapidly stab her and then roll out from under her.
+She falls and dies. The Dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 3
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around out of her vision.
+She clamps on Benedek with her jaw and flails him around.
+You stab her from behind and she lets go of Benedek.
+She whips you with her tail, knocking you back and causing your glowing armor to fade.
+While you are on the ground she stand tall and takes a snap at you.
+Benedek jumps in the way at the last second and takes the blow.
+He dies...you fall back but she stomps toward you.
+She stands and blows fire on you.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Shield"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on you and moves toward you.
+Benedek moves around out of her vision.
+She clamps on you with her jaw and flails you around.
+Benedek stabs her from behind and she lets go of you.
+Your glowing armor fades away. She focuses on Benedek
+You pick yourself up and run forward and bash her head with your shield.
+Now you both stab mount her wings and slash her.
+Together you stab her neck...she flies up...
+you jump off, but Benedek gets crushed at the top of the cave.
+The dragon falls and lays dead.
+The dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 2
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on you and moves toward you.
+Benedek moves around out of her vision.
+She clamps on you with her jaw and flails you around.
+Benedek stabs her from behind and she lets go of you.
+Your glowing armor fades away. She focuses on Benedek
+You pick yourself up and run forward and bash her head with your shield.
+Now you both stab mount her wings and slash her.
+You stumble and try to grab Benedek, but you knock him off and he lands and dies.
+You fall off the other side and the dragon stand over you then eats you.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword", "Armor", "Shield"]
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and shield, puff out your armor and move forward.
+The dragon focuses on you as you charge.
+She slaps her skull up to your shield and you slide back.
+You regain your feet and attack again.
+You slide under her neck and gash her throat.
+She roars great fire in your direction, you put up your shield.
+It blocks the fire but burns and melts.
+You realize you shield is gone so you charge again.
+You jump on her wing and on to her back, you climb up her neck
+and stab her in the head.
+The dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 3
+assert_equal(dragon_fight_sword(test_world), '''
+You pull out your sword and shield, puff out your armor and move forward.
+The dragon focuses on you as you charge.
+She slaps her skull up to your shield and you slide back.
+You regain your feet and attack again.
+You slide under her neck and gash her throat.
+She roars great fire in your direction, you put up your shield.
+It blocks the fire but burns and melts.
+You realize you shield is gone so you charge again.
+You jump on her wing and on to her back, you climb up her neck,
+but stumble off and fall to the ground.
+She stand over you and eat you.
+You Died.
+''')
+assert_equal(test_world['status'], 'lost')
 
 #dragon_fight_spells(x)
 test_world = create_world()
