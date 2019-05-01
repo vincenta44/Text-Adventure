@@ -775,7 +775,20 @@ Goblins jump all over you and stab you until you die.
 ''')
 
 test_world = create_world()
-
+test_world['player']['inventory'] = ["Armor", "Upgraded Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(sound_c(test_world), '''
+The goblins surround you and Frons. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. Frons is fighting well behind you.
+The goblins manage to slice you and Frons a little bit, but you manage the kill them.
+The goblin group is slain.
+''')
+assert_equal(test_world['map']['Path H']['about'],'''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+''' )
 
 #path_f(x)
 test_world = create_world()

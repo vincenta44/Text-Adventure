@@ -1171,7 +1171,7 @@ You are now standing in front of the Dragon's den.
                 return '''
 The goblins surround you and %s. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
-and throw others off you back.%s is fighting well behind you.
+and throw others off you back. %s is fighting well behind you.
 The goblins manage to slice you and %s a little bit, but you manage the kill them.
 The goblin group is slain.
 ''' % (follower, follower, follower)
