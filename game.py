@@ -1344,9 +1344,6 @@ You have made it back to the path.
         else:
             world['map']['Path F']['neighbors'].remove("Glowing House")
             return about + "Your follower doesn't have the key to open the gate to the house."
-
-    elif ("Upgraded Armor" in inventory) and ("Revive Potion" not in inventory):
-        return about[:len("You also notice a gate to your left with a pathway to a glowing house behind it.")]
     else:
         return about
 
