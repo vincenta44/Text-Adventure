@@ -574,6 +574,126 @@ blows fire at you and disintegrates you completely.
 You are dead.
 ''')
 
+test_world['player']['inventory'] = ["Spells", "Armor"]
+assert_equal(dragon_fight_spells(test_world), '''
+You walk in and wield your spells.
+You charge...but before you get there she
+blows fire at you and melts your armor.
+You try to run back, but she flies toward you and eats you.
+You are dead.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor", "Upgraded Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail and you get knocked back.
+you climb her and throws you off her tail onto the cave wall.
+Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+You stand your ground while she slowly gets weaker.
+Benedek climbs on her and finished her off.
+The Dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 2
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail and you get knocked back.
+you climb her and throws you off her tail onto the cave wall.
+Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+The spells get too powerful and you get knocked back.
+You and Benedek get eaten.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor", "Upgraded Armor"]
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+You stand tall and cast your spells.
+The dragon roars fire in your direction and counters your spells.
+She slaps you with her tail and you get knocked back.
+Your armor stops glowing.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+You stand your ground while she slowly gets weaker.
+While she is down you approach and she bites at you and get your arm.
+You move back and cast more spells until she falls.
+The Dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 3
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+You stand tall and cast your spells.
+The dragon roars fire in your direction and counters your spells.
+She slaps you with her tail and you get knocked back.
+Your armor stops glowing.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+You stand your ground while she slowly gets weaker.
+While she is down you approach and she bites at you and get your arm.
+With great power you cast your spells and engulf her in pain.
+The spells get too powerful and you get knocked back.
+She stands over you and eats you.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Spells", "Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail and you get knocked back.
+you climb her and throws you off her tail onto the cave wall.
+Your armor breaks off of your body. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+You stand your ground while she slowly gets weaker.
+Benedek climbs on her and she slips him off and he lands on a rock that impales him.
+You scream and enhance your spells which drain your power, but she slowly falls.
+The Dragon is slain.
+''')
+assert_equal(test_world['status'], 'won')
+test_world['player']['health'] = 2
+assert_equal(dragon_fight_spells(test_world), '''
+You wield your spells, puff out your armor and move forward.
+Benedek moves at your side. You both now charge.
+The dragon focuses on Benedek and moves toward him.
+You move around the back while she's is distracted.
+She slaps you with her tail and you get knocked back.
+you climb her and throws you off her tail onto the cave wall.
+Your armor breaks off of your body. Benedek take the opportunity and stabs her in the chest.
+You pick yourself up and run forward and aim your spells at her.
+With great power you cast your spells and engulf her in pain.
+You stand your ground while she slowly gets weaker.
+Benedek climbs on her and she slips him off and he lands on a rock that impales him.
+With great power you cast your spells and engulf her in pain.
+The spells get too powerful and you get knocked back.
+She stands over you and eats you.
+You died.
+''')
+assert_equal(test_world['status'], 'lost')
+
 #deep_cave(x)
 test_world = create_world()
 assert_equal(deep_cave(test_world), '''
@@ -583,6 +703,25 @@ The spider ties you up...
 waits 2 weeks...
 Then eats you...
 ''')
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Sword"]
+assert_equal(deep_cave(test_world), '''
+A Giant Spider jumps down from the top of the cave.
+You pull out you sword and charge.
+You get bitten once but with swift justice you
+stab it in the head. The spider is killed.
+''')
+test_world['player']['health'] = 1
+assert_equal(deep_cave(test_world), '''
+A Giant Spider jumps down from the top of the cave.
+You pull out you sword and charge.
+You get bitten once and can't react fast enough
+and get bitten again and again and again...
+until you die.
+''')
+assert_equal(test_world['status'], 'lost')
+
 
 #glowing_house(x)
 test_world = create_world()

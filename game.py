@@ -948,7 +948,7 @@ The Dragon is slain.
                 if world['player']['health'] <= 0:
                     world['status'] = 'lost'
                     return '''
-                    You wield your spells, puff out your armor and move forward.
+You wield your spells, puff out your armor and move forward.
 You stand tall and cast your spells.
 The dragon roars fire in your direction and counters your spells.
 She slaps you with her tail and you get knocked back.
