@@ -727,6 +727,47 @@ assert_equal(test_world['status'], 'lost')
 test_world = create_world()
 assert_equal(glowing_house(test_world), None)
 
+test_world = create_world()
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(glowing_house(test_world), '''
+The gate requires a key...you ask your Frons.
+He doesn't have anything. You can't get through.
+''')
+
+test_world = create_world()
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(glowing_house(test_world), '''
+The gate requires a key. You ask your follower.
+He looks in his bag and he pulls out a key.
+You put it in the door and it unlocks.
+''' + test_world['map']['Glowing House']['about'])
+assert_equal(test_world['map']['Glowing House']['about'], '''
+You are walking through the path and a spell casts your follower into the air and when he lands he dies
+You mourn for a minute but move forward to the house.
+When you step in there is a large rumble but nothing happens.
+''')
+test_world['player']['follower'] = False
+
+test_world = create_world()
+test_world['player']['inventory'] = ["Armor"]
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 1
+assert_equal(glowing_house(test_world), '''
+The gate requires a key. You ask your follower.
+He looks in his bag and he pulls out a key.
+You put it in the door and it unlocks.
+''' + test_world['map']['Glowing House']['about'])
+test_world['player']['follower'] = False
+assert_equal(test_world['map']['Glowing House']['about'], '''
+You are walking through the path and a spell casts your follower into the air and when he lands he dies
+You mourn for a minute but move forward to the house.
+When you step in there is a large rumble and your armor begins to glow.
+You feel more powerful. The only way now is back to the path.
+''')
+assert_equal("Upgraded Armor" in test_world['player']['inventory'], True)
+
 #sound_c(x)
 test_world = create_world()
 assert_equal(sound_c(test_world), '''

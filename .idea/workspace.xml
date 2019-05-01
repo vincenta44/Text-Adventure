@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="621" column="30" selection-start-line="621" selection-start-column="30" selection-end-line="621" selection-end-column="30" />
+            <state relative-caret-position="129">
+              <caret line="1111" column="29" selection-start-line="1111" selection-start-column="29" selection-end-line="1111" selection-end-column="29" />
               <folding>
                 <element signature="e#1029#2336#0" />
                 <element signature="e#2362#2605#0" />
@@ -45,8 +44,15 @@
                 <element signature="e#33148#33467#0" />
                 <element signature="e#33486#33677#0" />
                 <element signature="e#33715#40386#0" />
+                <element signature="e#34723#35341#0" />
+                <element signature="e#35505#36149#0" />
+                <element signature="e#36438#37118#0" />
+                <element signature="e#37238#37811#0" />
+                <element signature="e#38039#38873#0" />
+                <element signature="e#39077#39853#0" />
+                <element signature="e#39979#40177#0" />
+                <element signature="e#40236#40386#0" />
                 <element signature="e#40414#41896#0" />
-                <element signature="e#41928#44242#0" />
                 <element signature="e#44268#52284#0" />
                 <element signature="e#52309#53886#0" />
                 <element signature="e#53918#55230#0" />
@@ -54,6 +60,21 @@
                 <element signature="e#55608#56111#0" />
                 <element signature="e#56142#56988#0" />
                 <element signature="e#57020#57435#0" />
+                <element signature="e#57465#59692#0" />
+                <element signature="e#59724#60628#0" />
+                <element signature="e#60659#62582#0" />
+                <element signature="e#62622#63462#0" />
+                <element signature="e#63501#64292#0" />
+                <element signature="e#64326#64818#0" />
+                <element signature="e#64843#66468#0" />
+                <element signature="e#66500#66828#0" />
+                <element signature="e#66859#67358#0" />
+                <element signature="e#67387#67737#0" />
+                <element signature="e#67767#68190#0" />
+                <element signature="e#68224#70131#0" />
+                <element signature="e#70163#70613#0" />
+                <element signature="e#70649#72253#0" />
+                <element signature="e#72280#72905#0" />
               </folding>
             </state>
           </provider>
@@ -62,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="565" column="42" lean-forward="true" selection-start-line="565" selection-start-column="42" selection-end-line="565" selection-end-column="42" />
+            <state relative-caret-position="130">
+              <caret line="768" column="72" selection-start-line="768" selection-start-column="72" selection-end-line="768" selection-end-column="72" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <element signature="e#530#1656#0" />
@@ -103,7 +124,21 @@
                 <element signature="e#22406#22937#0" />
                 <element signature="e#22530#23097#0" />
                 <element signature="e#11589#11739#0" />
+                <element signature="e#24026#24301#0" />
+                <element signature="e#24497#25161#0" />
+                <element signature="e#25283#25901#0" />
+                <element signature="e#26118#26635#0" />
+                <element signature="e#26759#27235#0" />
+                <element signature="e#27755#28419#0" />
+                <element signature="e#28657#29491#0" />
                 <element signature="e#11820#12000#0" />
+                <element signature="e#29901#30085#0" />
+                <element signature="e#30158#30359#0" />
+                <element signature="e#30676#30778#0" />
+                <element signature="e#30861#30999#0" />
+                <element signature="e#31173#31400#0" />
+                <element signature="e#31640#31778#0" />
+                <element signature="e#31925#32152#0" />
                 <element signature="e#12170#12231#0" />
                 <element signature="e#12434#12473#0" />
                 <element signature="e#12528#12565#0" />
@@ -249,7 +284,7 @@
       <workItem from="1556576560669" duration="7000" />
       <workItem from="1556576632927" duration="2042000" />
       <workItem from="1556604016282" duration="67000" />
-      <workItem from="1556634838903" duration="6032000" />
+      <workItem from="1556634838903" duration="8378000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -314,11 +349,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556637523197</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added unit tests">
+      <created>1556724314493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556724314493</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added unit tests">
+      <created>1556728010562</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556728010562</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8345000" />
+    <option name="totallyTimeSpent" value="10691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,15 +379,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1420" height="753" extended-state="1" />
+    <frame x="0" y="23" width="1420" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.14731495" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.14731495" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32980332" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39939487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +459,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="added unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556640036054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556728711366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Text_Adventure$game.coverage" NAME="game Coverage Results" MODIFIED="1556635134677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -423,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="621" column="30" selection-start-line="621" selection-start-column="30" selection-end-line="621" selection-end-column="30" />
+        <state relative-caret-position="129">
+          <caret line="1111" column="29" selection-start-line="1111" selection-start-column="29" selection-end-line="1111" selection-end-column="29" />
           <folding>
             <element signature="e#1029#2336#0" />
             <element signature="e#2362#2605#0" />
@@ -448,8 +497,15 @@
             <element signature="e#33148#33467#0" />
             <element signature="e#33486#33677#0" />
             <element signature="e#33715#40386#0" />
+            <element signature="e#34723#35341#0" />
+            <element signature="e#35505#36149#0" />
+            <element signature="e#36438#37118#0" />
+            <element signature="e#37238#37811#0" />
+            <element signature="e#38039#38873#0" />
+            <element signature="e#39077#39853#0" />
+            <element signature="e#39979#40177#0" />
+            <element signature="e#40236#40386#0" />
             <element signature="e#40414#41896#0" />
-            <element signature="e#41928#44242#0" />
             <element signature="e#44268#52284#0" />
             <element signature="e#52309#53886#0" />
             <element signature="e#53918#55230#0" />
@@ -457,14 +513,29 @@
             <element signature="e#55608#56111#0" />
             <element signature="e#56142#56988#0" />
             <element signature="e#57020#57435#0" />
+            <element signature="e#57465#59692#0" />
+            <element signature="e#59724#60628#0" />
+            <element signature="e#60659#62582#0" />
+            <element signature="e#62622#63462#0" />
+            <element signature="e#63501#64292#0" />
+            <element signature="e#64326#64818#0" />
+            <element signature="e#64843#66468#0" />
+            <element signature="e#66500#66828#0" />
+            <element signature="e#66859#67358#0" />
+            <element signature="e#67387#67737#0" />
+            <element signature="e#67767#68190#0" />
+            <element signature="e#68224#70131#0" />
+            <element signature="e#70163#70613#0" />
+            <element signature="e#70649#72253#0" />
+            <element signature="e#72280#72905#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="565" column="42" lean-forward="true" selection-start-line="565" selection-start-column="42" selection-end-line="565" selection-end-column="42" />
+        <state relative-caret-position="130">
+          <caret line="768" column="72" selection-start-line="768" selection-start-column="72" selection-end-line="768" selection-end-column="72" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
             <element signature="e#530#1656#0" />
@@ -504,7 +575,21 @@
             <element signature="e#22406#22937#0" />
             <element signature="e#22530#23097#0" />
             <element signature="e#11589#11739#0" />
+            <element signature="e#24026#24301#0" />
+            <element signature="e#24497#25161#0" />
+            <element signature="e#25283#25901#0" />
+            <element signature="e#26118#26635#0" />
+            <element signature="e#26759#27235#0" />
+            <element signature="e#27755#28419#0" />
+            <element signature="e#28657#29491#0" />
             <element signature="e#11820#12000#0" />
+            <element signature="e#29901#30085#0" />
+            <element signature="e#30158#30359#0" />
+            <element signature="e#30676#30778#0" />
+            <element signature="e#30861#30999#0" />
+            <element signature="e#31173#31400#0" />
+            <element signature="e#31640#31778#0" />
+            <element signature="e#31925#32152#0" />
             <element signature="e#12170#12231#0" />
             <element signature="e#12434#12473#0" />
             <element signature="e#12528#12565#0" />
