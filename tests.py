@@ -774,6 +774,9 @@ assert_equal(sound_c(test_world), '''
 Goblins jump all over you and stab you until you die.
 ''')
 
+test_world = create_world()
+
+
 #path_f(x)
 test_world = create_world()
 assert_equal(path_f(test_world), world['map']['Path A']['about'])
