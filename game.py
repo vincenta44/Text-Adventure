@@ -74,7 +74,7 @@ def create_world():
 
 def create_player():
     '''
-    Creates the player in its inital state.
+    Creates the player in its initial state.
 
     Returns:
         Player: The initial state of the world
@@ -91,7 +91,7 @@ def create_player():
 
 def create_followers():
     '''
-    Creates the followers in their inital state.
+    Creates the followers in their initial state.
 
     Returns:
         Followers: The initial state of the followers
@@ -120,7 +120,7 @@ def create_followers():
 
 def create_map():
     '''
-    Creates the map in its inital state.
+    Creates the map in its initial state.
 
     Returns: The initial state of the map
     '''
@@ -168,7 +168,7 @@ forward is a gate that seems to be magical.
             },
         'Magic Gate': {
             'about':'''
-You approach the gate and it slowly opens on it's own.
+You approach the gate and it slowly opens on its own.
 The pathway only moves forward but the nature seems
 to be dying and dark past the gate.
 ''',
@@ -194,7 +194,7 @@ It's getting darker and darker....
             },
         'Path F': {
             'about':'''
-Infront of you is more of the winding path.
+In front of you is more of the winding path.
 You also notice a gate to your left with a pathway to a glowing house behind it.
 ''',
             'neighbors': ['Glowing House', 'Path G'],
@@ -203,7 +203,7 @@ You also notice a gate to your left with a pathway to a glowing house behind it.
             },
         'Path G': {
             'about':'''
-Getting darker than before, you have no choice but to move forward.
+Getting darker then before, you have no choice but to move forward.
 ''',
             'neighbors': ['Path H'],
             'stuff': [],
@@ -212,7 +212,7 @@ Getting darker than before, you have no choice but to move forward.
         'Path H': {
             'about':'''
 You approach a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 In the woods, to your right, you hear a sound.
 ''',
             'neighbors': ['Sound C', 'Dragon Den'],
@@ -269,7 +269,7 @@ Looks like something left tracks leading further from the house.
             },
         'Bear': {
             'about': '''
-You follow the tracks and you catch youself staring down a humungous bear.
+You follow the tracks and you catch yourself staring down a humungous bear.
 It stands and roars...becoming hostile"
 ''',
             'neighbors': ['Path A'],
@@ -453,7 +453,7 @@ You may move forward.
 You bring out your sword and wave it at the bear.
 It charges you and tackles you, making you drop your sword.
 It is biting and clawing at your chest but your armor deflects the blows.
-This gives you time, you reach for your sword and stab it's side.
+This gives you time, you reach for your sword and stab its side.
 The bear leaps off of you and you spring up and stab it one more time.
 This finishes the bear.
 '''
@@ -582,7 +582,7 @@ You died.
         world['player']['health'] = world['player']['health'] - 5
         world['status'] = 'lost'
         return '''
-The witch disinigrates you immediatley.
+The witch disintegrates you immediately.
 How did you even make it this far with no armor or weapon?
 '''
 
@@ -647,12 +647,12 @@ def dragon_fight_sword(world):
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail, but you block it with your shield.
 You shield flies away from you, but you move forward.
 you climb her and throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and jump onto her wing then to her back.
+You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, but you stumble and fall.
 The dragon kills %s then eats you.
 You Died.
@@ -663,12 +663,12 @@ You Died.
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail, but you block it with your shield.
 You shield flies away from you, but you move forward.
 you climb her and throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and jump onto her wing then to her back.
+You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, you stab your sword through her.
 She falls...You killed the dragon!
 ''' % (follower, follower, follower)
@@ -680,15 +680,15 @@ She falls...You killed the dragon!
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 You jump up on her tail. In one motion she grabs %s with her teeth
 and throws you off her tail onto the cave wall.
 %s is on the ground not moving. Your armor stops glowing.
-You pick yourself up and run foward and jump onto her wing then to her back.
+You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, but you stumble and fall.
 The dragon kills %s then eats you.
 You Died.
-''' % (follower, follower, follower, follower)
+''' % (follower, follower, follower, follower, follower)
                 if world['status'] == 'playing':
                     if_follower = False
                     world['status'] = 'won'
@@ -696,11 +696,11 @@ You Died.
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 You jump up on her tail. In one motion she grabs %s with her teeth
 and throws you off her tail onto the cave wall.
 %s is on the ground not moving. Your armor stops glowing.
-You pick yourself up and run foward and jump onto her wing then to her back.
+You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, you stab your sword through her.
 She falls...You killed the dragon!
 ''' % (follower, follower, follower, follower)
@@ -712,7 +712,7 @@ She falls...You killed the dragon!
                     return '''
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
-but it's glow begins to fade. You wiggle around a bite and stab her neck.
+but its glow begins to fade. You wiggle around a bite and stab her neck.
 She throws herself up and charges her voice.
 You pull up your shield and kneel behind it as she blows fire toward you.
 You shield melts under the heat so you charge.
@@ -724,10 +724,10 @@ You Died.
 '''
                 if world['status'] == 'playing':
                     world['status'] = 'won'
-                    return'''
+                    return '''
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
-but it's glow begins to fade. You wiggle around a bite and stab her neck.
+but its glow begins to fade. You wiggle around a bite and stab her neck.
 She throws herself up and charges her voice.
 You pull up your shield and kneel behind it as she blows fire toward you.
 You shield melts under the heat so you charge.
@@ -743,7 +743,7 @@ The dragon is slain.
                     return '''
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
-but it's glow begins to fade. You wiggle around a bite and stab her neck.
+but its glow begins to fade. You wiggle around a bite and stab her neck.
 She throws herself up and charges her voice.
 You jump behind a rock as she blows red hot flames toward you.
 She burns you and melt part of your armor.
@@ -763,7 +763,7 @@ You jump behind a rock as she blows red hot flames toward you.
 She burns you and melt part of your armor.
 You get up and charge after she is done.
 You slide under her head and slash her neck.
-Then you victorously stand with you sword pointed up through her stomach.
+Then you victoriously stand with you sword pointed up through her stomach.
 The dragon is slain.
 '''
         elif if_follower:
@@ -779,7 +779,7 @@ The dragon focuses on you and moves toward you.
 She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
 Your glowing armor fades away. She focuses on %s
-You pick yourself up and run foward and bash her head with your shield.
+You pick yourself up and run forward and bash her head with your shield.
 Now you both stab mount her wings and slash her.
 You stumble and try to grab %s, but you knock him off and he lands and dies.
 You fall off the other side and the dragon stand over you then eats you.
@@ -796,7 +796,7 @@ The dragon focuses on you and moves toward you.
 She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
 Your glowing armor fades away. She focuses on %s
-You pick yourself up and run foward and bash her head with your shield.
+You pick yourself up and run forward and bash her head with your shield.
 Now you both stab mount her wings and slash her.
 Together you stab her neck...she flies up...
 you jump off, but %s gets crushed at the top of the cave.
@@ -846,11 +846,11 @@ She falls and dies. The Dragon is slain.
 You pull out your sword and shield, puff out your armor and move forward.
 The dragon focuses on you as you charge.
 She slaps her skull up to your shield and you slide back.
-You ragain your feet and attack again.
+You regain your feet and attack again.
 You slide under her neck and gash her throat.
 She roars great fire in your direction, you put up your shield.
 It blocks the fire but burns and melts.
-You realise you shield is gone so you charge again.
+You realize you shield is gone so you charge again.
 You jump on her wing and on to her back, you climb up her neck,
 but stumble off and fall to the ground.
 She stand over you and eat you.
@@ -862,11 +862,11 @@ You Died.
 You pull out your sword and shield, puff out your armor and move forward.
 The dragon focuses on you as you charge.
 She slaps her skull up to your shield and you slide back.
-You ragain your feet and attack again.
+You regain your feet and attack again.
 You slide under her neck and gash her throat.
-She roars great fire in yuor direction, you put up your shield.
+She roars great fire in your direction, you put up your shield.
 It blocks the fire but burns and melts.
-You realise you shield is gone so you charge again.
+You realize you shield is gone so you charge again.
 You jump on her wing and on to her back, you climb up her neck
 and stab her in the head.
 The dragon is slain.
@@ -886,10 +886,9 @@ You are dead.
         return '''
 You walk in and pull out you sword.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 '''
-
 
 def dragon_fight_spells(world):
     '''
@@ -918,11 +917,11 @@ def dragon_fight_spells(world):
 You wield your spells, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail and you get knocked back.
 you climb her and throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 The spells get too powerful and you get knocked back.
 You and %s get eaten.
@@ -934,11 +933,11 @@ You died.
 You wield your spells, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail and you get knocked back.
 you climb her and throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 %s climbs on her and finished her off.
@@ -949,12 +948,12 @@ The Dragon is slain.
                 if world['player']['health'] <= 0:
                     world['status'] = 'lost'
                     return '''
-                    You wield your spells, puff out your armor and move forward.
+You wield your spells, puff out your armor and move forward.
 You stand tall and cast your spells.
-The dragon roars fire in your direction and conunters your spells.
+The dragon roars fire in your direction and counters your spells.
 She slaps you with her tail and you get knocked back.
 Your armor stops glowing.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 While she is down you approach and she bites at you and get your arm.
@@ -968,10 +967,10 @@ You died.
                     return'''
 You wield your spells, puff out your armor and move forward.
 You stand tall and cast your spells.
-The dragon roars fire in your direction and conunters your spells.
+The dragon roars fire in your direction and counters your spells.
 She slaps you with her tail and you get knocked back.
 Your armor stops glowing.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 While she is down you approach and she bites at you and get your arm.
@@ -986,11 +985,11 @@ The Dragon is slain.
 You wield your spells, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail and you get knocked back.
 you climb her and throws you off her tail onto the cave wall.
 Your armor breaks off of your body. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 %s climbs on her and she slips him off and he lands on a rock that impales him.
@@ -1006,15 +1005,15 @@ You died.
 You wield your spells, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while shes is distracted.
+You move around the back while she's is distracted.
 She slaps you with her tail and you get knocked back.
 you climb her and throws you off her tail onto the cave wall.
 Your armor breaks off of your body. %s take the opportunity and stabs her in the chest.
-You pick yourself up and run foward and aim your spells at her.
+You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 %s climbs on her and she slips him off and he lands on a rock that impales him.
-You scream and ehance your seplls which drain your power, but she slowly falls.
+You scream and enhance your spells which drain your power, but she slowly falls.
 The Dragon is slain.
 ''' % (follower, follower, follower, follower)
             else:
@@ -1031,7 +1030,7 @@ You are dead.
         return '''
 You walk in and wield your spells.
 You charge...but before you get there she
-blows fire at you and disengrates you completley.
+blows fire at you and disintegrates you completely.
 You are dead.
 '''
 
@@ -1167,7 +1166,7 @@ You both lay there and die.
             if world['status'] == 'playing':
                 world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                 return '''
 The goblins surround you and %s. You pull out your sword and charge.
@@ -1192,7 +1191,7 @@ You died.
             if world['status'] == 'playing':
                 world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                 return '''
 The goblins surround you. You pull out your sword and charge.
@@ -1218,7 +1217,7 @@ You died.
             if world['status'] == 'playing':
                 world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                 return '''
 The goblins surround you and %s. You pull out your sword and charge.
@@ -1244,7 +1243,7 @@ You both lay there and die.
             if world['status'] == 'playing':
                 world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                 return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
@@ -1268,7 +1267,7 @@ You died.
                 if world['status'] == 'playing':
                     world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                     return '''
 The goblins surround you. You stand your ground and charge your spells.
@@ -1294,7 +1293,7 @@ You died.
                 if world['status'] == 'playing':
                     world['map']['Path H']['about'] = '''
 You are at a turn in the road.
-You are now standing infront of the Dragon's den.
+You are now standing in front of the Dragon's den.
 '''
                     return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
@@ -1740,6 +1739,7 @@ You found nothing.
         return '''
 You have used up all the power the amulet has.
 '''
+
 def see_inventory(world):
     '''
     Consumes a world and returns a statement showing the players inventory.
@@ -1909,14 +1909,14 @@ You are now the most famous adventurer in the land!
             return '''
 Congratulations! You have slain the Dragon!
 You and %s head home, you drop %s at his town and go home.
-Unfortunatley you did not grab the treasure, therefore you town resents you.
+Unfortunately you did not grab the treasure, therefore you town resents you.
 You are the most hated Dragon slayer in the land.
 ''' % (follower, follower)
         else:
             return '''
 Congratulations! You have slain the Dragon!
 You head back home now.
-Unfortunatley you did not grab the treasure, therefore you town resents you.
+Unfortunately you did not grab the treasure, therefore you town resents you.
 You are the most hated Dragon slayer in the land.
 '''
 
