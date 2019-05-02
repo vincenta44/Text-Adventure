@@ -1086,7 +1086,7 @@ assert_equal(test_world['player']['location'], "Sound B")
 
 test_world = create_world()
 test_world['player']['location'] = 'Path H'
-test_world['player']['inventory'] = ["Armor", "Sword", "Upgraded Armor"]
+test_world['player']['inventory'] = ["Armor", "Sword"]
 assert_equal(follow_sound(test_world, 'Follow the Sound'), "")
 
 #follow_path(x, y)
