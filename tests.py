@@ -1103,3 +1103,15 @@ assert_equal(follow_path(test_world, "Follow Path"), '''
 You followed the path.
 ''')
 assert_equal(test_world['player']['location'], 'Path B')
+
+#revive_follower(x)
+
+#amulet(x)
+
+#see_inventory(x)
+
+#learn_spells(x)
+
+#keep_sword(x)
+
+#eat_rations(x)
