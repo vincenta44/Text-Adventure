@@ -20,6 +20,9 @@ glowing_house,
 sound_c,
 path_f,
 town,
+get_options,
+goto,
+get,
 follow_path,
 follow_sound
 )
@@ -97,9 +100,8 @@ assert_equal(render(test_world), render_location(test_world) + render_player(tes
 
 #render_location(x)
 test_world = create_world()
-assert_equal(render_location(test_world), test_world['map']['Path A']['about'])
-test_world['player']['location'] = 'Path F'
-assert_equal(render_location(test_world), path_f(test_world))
+location = test_world['player']['location']
+assert_equal(render_location(test_world), test_world['map'][location]['about'])
 
 #render_enemy(x)
 test_world = create_world()
@@ -934,24 +936,134 @@ assert_equal(test_world['status'], 'lost')
 
 #path_f(x)
 test_world = create_world()
-assert_equal(path_f(test_world), world['map']['Path A']['about'])
+test_world['player']['location'] = 'Path F'
+test_world['player']['inventory'] = ["Upgraded Armor", "Revive Potion"]
+assert_equal(path_f(test_world), '''
+You have a revive potion. You can use this to revive your follower.
+''')
+test_world['player']['inventory'] = ["Upgraded Armor"]
+assert_equal(path_f(test_world), '''
+You have made it back to the path.
+''')
+
+test_world = create_world()
+test_world['player']['location'] = 'Path F'
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 3
+assert_equal(path_f(test_world), test_world['map']['Path F']['about'] + "Your follower doesn't have the key to open the gate to the house.")
+assert_equal("Glowing House" in test_world['map']['Path F']['neighbors'], False)
+
+test_world = create_world()
+test_world['player']['location'] = 'Path F'
+test_world['player']['follower'] = True
+test_world['player']['follower num'] = 2
+assert_equal(path_f(test_world), test_world['map']['Path F']['about'] + "Your follower has a key to open the gate to the house.")
+
+test_world = create_world()
+test_world['player']['location'] = 'Path F'
+assert_equal(path_f(test_world), test_world['map']['Path F']['about'] + "You don't have the key to the gate, so cannot go toward the house.")
+assert_equal("Glowing House" in test_world['map']['Path F']['neighbors'], False)
 
 #town(x, y)
 test_world = create_world()
-assert_equal(town(test_world, "Benedek"),
-            '''
+assert_equal(town(test_world, "Benedek"),'''
 You chose Benedek. Good choice.
 ''')
-assert_equal(town(test_world, "Frons"),
-             '''
+assert_equal(test_world['map']['Town']['about'], '''
+You've finished all your business in the town.
+You may move forward.
+''')
+assert_equal(town(test_world, "Frons"),'''
 You chose Frons. Poor choice.
-'''
-)
-assert_equal(town(test_world, "Adjorn"),
-             '''
+''')
+assert_equal(test_world['map']['Town']['about'], '''
+You've finished all your business in the town.
+You may move forward.
+''')
+assert_equal(town(test_world, "Adjorn"), '''
 You chose Adjorn. Great choice!
-'''
-)
+''')
+assert_equal(test_world['map']['Town']['about'], '''
+You've finished all your business in the town.
+You may move forward.
+''')
+
+#get_options(x)
+test_world = create_world()
+assert_equal(get_options(test_world), ['Quit', 'See Inventory', 'Go to Broken House', 'Go to Woods', 'Follow Path', 'Use Amulet'])
+assert_equal(isinstance(get_options(test_world), list), True)
+
+#goto(x, y)
+test_world = create_world()
+assert_equal(goto(test_world, "Follow the Tracks"), '''
+You followed the tracks.
+
+You follow the tracks and you catch yourself staring down a humungous bear.
+It stands and roars...becoming hostile"
+
+You stare at the bear in terror.
+It rushes you and attacks.
+You have no way of defending yourself and you get mauled and die.
+''')
+assert_equal(test_world['player']['location'], 'Bear')
+assert_equal(goto(test_world, 'Go to Deep Cave'), '''
+You went to Deep Cave
+
+You follow the path until you encounter a small room with a plate of armor on it.
+You creep toward it.
+
+A Giant Spider drops down right on your head.
+You have nothing to defend yourself ad you swing around in terror.
+The spider ties you up...
+waits 2 weeks...
+Then eats you...
+''')
+assert_equal(test_world['player']['location'], 'Deep Cave')
+assert_equal(goto(test_world, 'Go to Woods'), '''
+You went to Woods
+''')
+
+#get(x, y)
+test_world = create_world()
+test_world['player']['location'] = "Broken House"
+assert_equal(get(test_world, "Get Rations"), '''
+You picked up some Rations, these can restore your health when eaten.
+''')
+assert_equal(test_world['map']['Broken House']['stuff'], [])
+assert_equal("Rations" in test_world['player']['inventory'], True)
+
+test_world = create_world()
+test_world['player']['location'] = "Sound B"
+assert_equal(get(test_world, "Get Sword"), '''
+You picked up sword
+''')
+assert_equal(test_world['map']['Sound B']['stuff'], [])
+assert_equal("Sword" in test_world['player']['inventory'], True)
+assert_equal(test_world['map']['Woods']['about'], '''
+The woods have a small path that slowly degrades as you keep walking.
+Ahead of you are denser trees with no more path.
+''')
+assert_equal("Sound B" in test_world['map']['Woods']['neighbors'], False)
+
+test_world = create_world()
+test_world['player']['location'] = "Bear"
+test_world['player']['inventory'] = ["Amulet"]
+assert_equal(get(test_world, "Get Bear Pelt"), '''
+You picked up Bear Pelt
+''')
+assert_equal(test_world['map']['Bear']['stuff'], [])
+assert_equal(test_world['map']['Broken House']['about'], '''
+You're in this broken down house.
+But seems like someone still lives here.
+There is a nice meal on the table you can take for later.
+''')
+assert_equal(test_world['map']['Town']['about'], '''
+You are in a small town with people bustling on the sidewalks.
+You are approached by 3 vendors who wish to have you bear pelt in exchange for their service.
+You can give only one of them the pelt, whoever you choose will
+follow you throughout your journey. Choose wisely...
+''')
+assert_equal("Sound A" in test_world['map']['Broken House']['neighbors'], False)
 
 #follow_sound(x, y)
 test_world = create_world()
@@ -962,13 +1074,31 @@ You walk to the sound and before you know it
 you are surrounded by a group of small goblins!
 Goblins jump all over you and stab you until you die.
 ''')
+assert_equal("Sound C" in test_world['map']['Path H']['neighbors'], False)
+assert_equal(test_world['player']['location'], "Sound C")
+
+test_world = create_world()
+test_world['player']['location'] = 'Woods'
+assert_equal(follow_sound(test_world, 'Follow the Sound'),  '''
+You followed the sound
+''')
+assert_equal(test_world['player']['location'], "Sound B")
 
 #follow_path(x, y)
 test_world = create_world()
-test_world['player']['location'] = 'Sound C'
-test_world['player']['inventory'] = ["Sword", "Armor", "Upgraded Armor"]
-sound_c(test_world)
-assert_equal(test_world['map']['Path H']['about'], '''
-You are at a turn in the road.
-You are now standing in front of the Dragon's den.
+test_world['player']['location'] = 'Path D'
+assert_equal(follow_path(test_world, "Follow Path"), '''
+You followed the path.
+
+It's getting darker and darker....
+
+The witch disintegrates you immediately.
+How did you even make it this far with no armor or weapon?
 ''')
+
+test_world = create_world()
+test_world['player']['location'] = 'Path A'
+assert_equal(follow_path(test_world, "Follow Path"), '''
+You followed the path.
+''')
+assert_equal(test_world['player']['location'], 'Path B')
