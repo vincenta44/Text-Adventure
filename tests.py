@@ -1084,6 +1084,11 @@ You followed the sound
 ''')
 assert_equal(test_world['player']['location'], "Sound B")
 
+test_world = create_world()
+test_world['player']['location'] = 'Path H'
+test_world['player']['inventory'] = ["Armor", "Sword", "Upgraded Armor"]
+assert_equal(follow_sound(test_world, 'Follow the Sound'), "")
+
 #follow_path(x, y)
 test_world = create_world()
 test_world['player']['location'] = 'Path D'
@@ -1103,6 +1108,7 @@ assert_equal(follow_path(test_world, "Follow Path"), '''
 You followed the path.
 ''')
 assert_equal(test_world['player']['location'], 'Path B')
+
 
 #revive_follower(x)
 
