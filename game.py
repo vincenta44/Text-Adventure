@@ -1645,7 +1645,7 @@ def follow_sound(world, command):
     location = world['player']['location']
     here = world['map'][location]
     about = world['map'][location]['about']
-    if world['player']['location'] == 'Sound C':
+    if world['map'][location]['enemy']:
         world['map']['Path H']['neighbors'].remove('Sound C')
         return '''
 You followed the sound
