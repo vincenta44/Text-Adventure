@@ -647,10 +647,10 @@ def dragon_fight_sword(world):
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 She slaps you with her tail, but you block it with your shield.
-You shield flies away from you, but you move forward.
-you climb her and throws you off her tail onto the cave wall.
+Your shield flies away from you, but you move forward.
+You manage to climb her, but she throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
 You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, but you stumble and fall.
@@ -666,7 +666,7 @@ The dragon focuses on %s and moves toward him.
 You move around the back while she's is distracted.
 She slaps you with her tail, but you block it with your shield.
 You shield flies away from you, but you move forward.
-you climb her and throws you off her tail onto the cave wall.
+You manage to climb her, but she throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
 You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, you stab your sword through her.
@@ -680,7 +680,7 @@ She falls...You killed the dragon!
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 You jump up on her tail. In one motion she grabs %s with her teeth
 and throws you off her tail onto the cave wall.
 %s is on the ground not moving. Your armor stops glowing.
@@ -696,7 +696,7 @@ You Died.
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 You jump up on her tail. In one motion she grabs %s with her teeth
 and throws you off her tail onto the cave wall.
 %s is on the ground not moving. Your armor stops glowing.
@@ -713,7 +713,7 @@ She falls...You killed the dragon!
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
 but its glow begins to fade. You wiggle around a bite and stab her neck.
-She throws herself up and charges her voice.
+She flies up to the top of the cave and charges her breath.
 You pull up your shield and kneel behind it as she blows fire toward you.
 You shield melts under the heat so you charge.
 You run around the sides of the cave and throw her off.
@@ -728,7 +728,7 @@ You Died.
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
 but its glow begins to fade. You wiggle around a bite and stab her neck.
-She throws herself up and charges her voice.
+She flies up to the top of the cave and charges her breath.
 You pull up your shield and kneel behind it as she blows fire toward you.
 You shield melts under the heat so you charge.
 You run around the sides of the cave and throw her off.
@@ -744,12 +744,12 @@ The dragon is slain.
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
 but its glow begins to fade. You wiggle around a bite and stab her neck.
-She throws herself up and charges her voice.
+She flies up to the top of the cave and charges her breath.
 You jump behind a rock as she blows red hot flames toward you.
 She burns you and melt part of your armor.
 You get up and charge after she is done.
 You try to slide under her neck but you trip.
-She stand over you and breathes fire on you.
+She stands over you and breathes fire on you until you melt.
 You Died.
 '''
                 if world['status'] == 'playing':
@@ -758,7 +758,7 @@ You Died.
 You pull out your sword and run shouting battle cries.
 She bites at you, you armor withstands her jaw,
 but it's glow begins to fade. You wiggle around a bite and stab her neck.
-She throws herself up and charges her voice.
+She flies up to the top of the cave and charges her breath.
 You jump behind a rock as she blows red hot flames toward you.
 She burns you and melt part of your armor.
 You get up and charge after she is done.
@@ -780,7 +780,7 @@ She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
 Your glowing armor fades away. She focuses on %s
 You pick yourself up and run forward and bash her head with your shield.
-Now you both stab mount her wings and slash her.
+Now you both mount her wings and slash her.
 You stumble and try to grab %s, but you knock him off and he lands and dies.
 You fall off the other side and the dragon stand over you then eats you.
 You died.
@@ -797,7 +797,7 @@ She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
 Your glowing armor fades away. She focuses on %s
 You pick yourself up and run forward and bash her head with your shield.
-Now you both stab mount her wings and slash her.
+Now you both mount her wings and slash her.
 Together you stab her neck...she flies up...
 you jump off, but %s gets crushed at the top of the cave.
 The dragon falls and lays dead.
@@ -917,14 +917,14 @@ def dragon_fight_spells(world):
 You wield your spells, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 She slaps you with her tail and you get knocked back.
 you climb her and throws you off her tail onto the cave wall.
 Your armor stops glowing. %s take the opportunity and stabs her in the chest.
 You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 The spells get too powerful and you get knocked back.
-You and %s get eaten.
+Because of this you and %s are vunerable and get eaten.
 You died.
 ''' % (follower, follower, follower, follower)
                 if world['status'] == 'playing':
@@ -956,10 +956,10 @@ Your armor stops glowing.
 You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
-While she is down you approach and she bites at you and get your arm.
+While she is down you approach and she bites at you and severely wounds your arm.
 With great power you cast your spells and engulf her in pain.
 The spells get too powerful and you get knocked back.
-She stands over you and eats you.
+Because of this you and %s are vunerable and get eaten.
 You died.
 '''
                 if world['status'] == 'playing':
@@ -973,8 +973,9 @@ Your armor stops glowing.
 You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
-While she is down you approach and she bites at you and get your arm.
-You move back and cast more spells until she falls.
+While she is down you approach and she bites at you and get wounds your arm.
+You move back and cast more spells, getting more and more powerful.
+She tries to counter, but she is too weak and slowly falls.
 The Dragon is slain.
 '''
             elif if_follower:
@@ -994,7 +995,7 @@ With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 %s climbs on her and she slips him off and he lands on a rock that impales him.
 With great power you cast your spells and engulf her in pain.
-The spells get too powerful and you get knocked back.
+Because of this you and %s are vunerable and get eaten.
 She stands over you and eats you.
 You died.
 ''' % (follower, follower, follower, follower)
@@ -1013,7 +1014,7 @@ You pick yourself up and run forward and aim your spells at her.
 With great power you cast your spells and engulf her in pain.
 You stand your ground while she slowly gets weaker.
 %s climbs on her and she slips him off and he lands on a rock that impales him.
-You scream and enhance your spells which drain your power, but she slowly falls.
+You shout and enhance your spells which drains your power, but she slowly falls.
 The Dragon is slain.
 ''' % (follower, follower, follower, follower)
             else:
@@ -1107,28 +1108,28 @@ He doesn't have anything. You can't get through.
             world['player']['follower'] = False
             if "Armor" in inventory:
                 world['map']['Glowing House']['about'] = '''
-You are walking through the path and a spell casts your follower into the air and when he lands he dies
+You are walking through the path and a spell casts %s into the air and when he lands he dies
 You mourn for a minute but move forward to the house.
 When you step in there is a large rumble and your armor begins to glow.
 You feel more powerful. The only way now is back to the path.
-'''
+''' % (follower)
                 inventory.append("Upgraded Armor")
                 return '''
-The gate requires a key. You ask your follower.
+The gate requires a key. You ask %s
 He looks in his bag and he pulls out a key.
 You put it in the door and it unlocks.
-''' + world['map']['Glowing House']['about']
+''' % (follower) + world['map']['Glowing House']['about']
             else:
                 world['map']['Glowing House']['about'] = '''
-You are walking through the path and a spell casts your follower into the air and when he lands he dies
+You are walking through the path and a spell casts %s into the air and when he lands he dies
 You mourn for a minute but move forward to the house.
 When you step in there is a large rumble but nothing happens.
-'''
+''' % (follower)
                 return '''
-The gate requires a key. You ask your follower.
+The gate requires a key. You ask %s.
 He looks in his bag and he pulls out a key.
 You put it in the door and it unlocks.
-''' + world['map']['Glowing House']['about']
+''' % (follower) + world['map']['Glowing House']['about']
     else:
         return None
 
@@ -1159,7 +1160,7 @@ def sound_c(world):
 The goblins surround you and %s. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. %s is fighting well behind you.
-The goblins manage to slice you and %s. You guys start bleeding out.
+The goblins manage to slice you and %s. You both start bleeding out.
 The goblins start gathering up and overcoming you.
 You both lay there and die.
 ''' % (follower, follower, follower)
@@ -1185,7 +1186,7 @@ You can take one of their shields for your journey.
 The goblins surround you. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. You keep getting overwhelmed.
-The goblins manage to slice you as you fight and start bleeding out.
+The goblins manage to slice you as you fight and you start bleeding out.
 You fall down and get overcome by goblins.
 You died.
 '''
@@ -1473,8 +1474,9 @@ def render_player(world):
     health = str(world['player']['health'])
     if health == 0:
         world['status'] = 'lost'
-    return '''Your health is " + health + "/5
-'''
+    return '''
+Your health is %s/5
+''' % (health)
 
 def get_options(world):
     '''
