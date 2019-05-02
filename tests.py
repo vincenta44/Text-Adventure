@@ -1095,6 +1095,7 @@ It's getting darker and darker....
 The witch disintegrates you immediately.
 How did you even make it this far with no armor or weapon?
 ''')
+assert_equal(test_world['player']['location'], 'Path E')
 
 test_world = create_world()
 test_world['player']['location'] = 'Path A'
