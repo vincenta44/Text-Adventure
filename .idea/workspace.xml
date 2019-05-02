@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="1281" column="73" selection-start-line="1281" selection-start-column="73" selection-end-line="1281" selection-end-column="73" />
+            <state relative-caret-position="549">
+              <caret line="1475" column="14" selection-start-line="1475" selection-start-column="14" selection-end-line="1475" selection-end-column="14" />
               <folding>
                 <element signature="e#1029#2336#0" />
                 <element signature="e#2362#2605#0" />
@@ -35,18 +35,20 @@
                 <element signature="e#33715#40366#0" />
                 <element signature="e#40394#41876#0" />
                 <element signature="e#41908#44222#0" />
-                <element signature="e#45045#48513#0" />
-                <element signature="e#45109#46229#0" />
+                <element signature="e#44248#52201#0" />
+                <element signature="e#44248#44648#1" />
                 <element signature="e#46286#47310#0" />
                 <element signature="e#47349#48513#0" />
+                <element signature="e#48554#52081#0" />
                 <element signature="e#48618#49758#0" />
+                <element signature="e#49815#50858#0" />
+                <element signature="e#50897#52081#0" />
                 <element signature="e#52100#52201#0" />
                 <element signature="e#52226#53749#0" />
                 <element signature="e#53781#55093#0" />
                 <element signature="e#55118#55437#0" />
                 <element signature="e#55471#55974#0" />
                 <element signature="e#56005#56851#0" />
-                <element signature="e#56883#57298#0" />
                 <element signature="e#57328#59555#0" />
                 <element signature="e#59587#60491#0" />
                 <element signature="e#60522#62445#0" />
@@ -198,9 +200,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1420" />
+    <option name="width" value="1440" />
     <option name="height" value="791" />
   </component>
   <component name="ProjectView">
@@ -229,7 +231,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -319,7 +321,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -336,7 +338,7 @@
       <workItem from="1556741766640" duration="9863000" />
       <workItem from="1556756471450" duration="844000" />
       <workItem from="1556766589655" duration="237000" />
-      <workItem from="1556802897969" duration="433000" />
+      <workItem from="1556802897969" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -485,11 +487,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556755843555</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update">
+      <created>1556809959288</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556809959288</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23123000" />
+    <option name="totallyTimeSpent" value="24139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,10 +510,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1420" height="791" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.15602322" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.15379113" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -579,9 +588,9 @@
     <MESSAGE value="fixed sound_c() indentation" />
     <MESSAGE value="path_f() edit" />
     <MESSAGE value="added unit tests" />
-    <MESSAGE value="update" />
     <MESSAGE value="update unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="update unit tests" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556756875892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -747,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="1281" column="73" selection-start-line="1281" selection-start-column="73" selection-end-line="1281" selection-end-column="73" />
+        <state relative-caret-position="549">
+          <caret line="1475" column="14" selection-start-line="1475" selection-start-column="14" selection-end-line="1475" selection-end-column="14" />
           <folding>
             <element signature="e#1029#2336#0" />
             <element signature="e#2362#2605#0" />
@@ -763,18 +772,20 @@
             <element signature="e#33715#40366#0" />
             <element signature="e#40394#41876#0" />
             <element signature="e#41908#44222#0" />
-            <element signature="e#45045#48513#0" />
-            <element signature="e#45109#46229#0" />
+            <element signature="e#44248#52201#0" />
+            <element signature="e#44248#44648#1" />
             <element signature="e#46286#47310#0" />
             <element signature="e#47349#48513#0" />
+            <element signature="e#48554#52081#0" />
             <element signature="e#48618#49758#0" />
+            <element signature="e#49815#50858#0" />
+            <element signature="e#50897#52081#0" />
             <element signature="e#52100#52201#0" />
             <element signature="e#52226#53749#0" />
             <element signature="e#53781#55093#0" />
             <element signature="e#55118#55437#0" />
             <element signature="e#55471#55974#0" />
             <element signature="e#56005#56851#0" />
-            <element signature="e#56883#57298#0" />
             <element signature="e#57328#59555#0" />
             <element signature="e#59587#60491#0" />
             <element signature="e#60522#62445#0" />

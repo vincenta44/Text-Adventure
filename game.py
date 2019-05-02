@@ -1473,7 +1473,8 @@ def render_player(world):
     health = str(world['player']['health'])
     if health == 0:
         world['status'] = 'lost'
-    return "Your health is " + health + "/5\n"
+    return '''Your health is " + health + "/5
+'''
 
 def get_options(world):
     '''
