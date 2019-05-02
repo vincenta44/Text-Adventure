@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,36 +19,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
+            <state relative-caret-position="91">
+              <caret line="1630" column="29" lean-forward="true" selection-start-line="1630" selection-start-column="29" selection-end-line="1630" selection-end-column="29" />
               <folding>
-                <element signature="e#1029#2336#0" />
-                <element signature="e#2362#2605#0" />
-                <element signature="e#2632#2951#0" />
-                <element signature="e#2981#3603#0" />
-                <element signature="e#3627#11197#0" />
-                <element signature="e#11222#13608#0" />
-                <element signature="e#13631#15902#0" />
-                <element signature="e#15927#19920#0" />
-                <element signature="e#19951#21108#0" />
-                <element signature="e#21145#33677#0" />
-                <element signature="e#33715#40366#0" />
-                <element signature="e#40394#41876#0" />
-                <element signature="e#57709#59936#0" />
-                <element signature="e#59968#60872#0" />
-                <element signature="e#60903#62826#0" />
-                <element signature="e#62866#63706#0" />
-                <element signature="e#63745#64536#0" />
-                <element signature="e#64570#65062#0" />
-                <element signature="e#65087#66712#0" />
-                <element signature="e#66744#67072#0" />
-                <element signature="e#67103#67602#0" />
-                <element signature="e#67631#67981#0" />
-                <element signature="e#68011#68434#0" />
-                <element signature="e#68468#70375#0" />
-                <element signature="e#70407#70857#0" />
-                <element signature="e#70893#72497#0" />
-                <element signature="e#72524#73149#0" />
+                <element signature="e#65340#66965#0" />
+                <element signature="e#66997#67325#0" />
+                <element signature="e#67356#67855#0" />
+                <element signature="e#67884#68234#0" />
+                <element signature="e#68264#68687#0" />
               </folding>
             </state>
           </provider>
@@ -54,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="2931">
               <caret line="1021" selection-start-line="1021" selection-end-line="1021" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -106,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="791" />
@@ -116,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.game">
+  <component name="RunManager" selected="Python.tests">
     <configuration name="Text Adventure Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Text-Adventure" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,8 +202,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.game" />
-        <item itemvalue="Python.Text Adventure Game" />
         <item itemvalue="Python.tests" />
+        <item itemvalue="Python.Text Adventure Game" />
       </list>
     </recent_temporary>
   </component>
@@ -245,6 +226,8 @@
       <workItem from="1556756471450" duration="844000" />
       <workItem from="1556766589655" duration="237000" />
       <workItem from="1556802897969" duration="1449000" />
+      <workItem from="1556812774698" duration="112000" />
+      <workItem from="1556813087660" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -400,11 +383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556809959288</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <created>1556812804311</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1556812804311</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24157000" />
+    <option name="totallyTimeSpent" value="24793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,14 +407,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="791" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.15379113" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.15808298" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3104435" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.042918455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39939487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,9 +488,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556756875892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1556813444174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Text_Adventure$Text_Adventure_Game.coverage" NAME="Text Adventure Game Coverage Results" MODIFIED="1556803635523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../School/CISC 108" />
-    <SUITE FILE_PATH="coverage/Text_Adventure$game.coverage" NAME="game Coverage Results" MODIFIED="1556812792938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text_Adventure$game.coverage" NAME="game Coverage Results" MODIFIED="1556813606729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codeop.py">
@@ -561,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="2931">
           <caret line="1021" selection-start-line="1021" selection-end-line="1021" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -590,36 +579,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
+        <state relative-caret-position="91">
+          <caret line="1630" column="29" lean-forward="true" selection-start-line="1630" selection-start-column="29" selection-end-line="1630" selection-end-column="29" />
           <folding>
-            <element signature="e#1029#2336#0" />
-            <element signature="e#2362#2605#0" />
-            <element signature="e#2632#2951#0" />
-            <element signature="e#2981#3603#0" />
-            <element signature="e#3627#11197#0" />
-            <element signature="e#11222#13608#0" />
-            <element signature="e#13631#15902#0" />
-            <element signature="e#15927#19920#0" />
-            <element signature="e#19951#21108#0" />
-            <element signature="e#21145#33677#0" />
-            <element signature="e#33715#40366#0" />
-            <element signature="e#40394#41876#0" />
-            <element signature="e#57709#59936#0" />
-            <element signature="e#59968#60872#0" />
-            <element signature="e#60903#62826#0" />
-            <element signature="e#62866#63706#0" />
-            <element signature="e#63745#64536#0" />
-            <element signature="e#64570#65062#0" />
-            <element signature="e#65087#66712#0" />
-            <element signature="e#66744#67072#0" />
-            <element signature="e#67103#67602#0" />
-            <element signature="e#67631#67981#0" />
-            <element signature="e#68011#68434#0" />
-            <element signature="e#68468#70375#0" />
-            <element signature="e#70407#70857#0" />
-            <element signature="e#70893#72497#0" />
-            <element signature="e#72524#73149#0" />
+            <element signature="e#65340#66965#0" />
+            <element signature="e#66997#67325#0" />
+            <element signature="e#67356#67855#0" />
+            <element signature="e#67884#68234#0" />
+            <element signature="e#68264#68687#0" />
           </folding>
         </state>
       </provider>

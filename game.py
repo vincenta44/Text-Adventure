@@ -998,7 +998,7 @@ With great power you cast your spells and engulf her in pain.
 Because of this you and %s are vunerable and get eaten.
 She stands over you and eats you.
 You died.
-''' % (follower, follower, follower, follower)
+''' % (follower, follower, follower, follower, follower)
                 if world['status'] == 'playing':
                     world['status'] = 'won'
                     if_follower = False
