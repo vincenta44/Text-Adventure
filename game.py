@@ -1345,7 +1345,8 @@ You have made it back to the path.
             world['map']['Path F']['neighbors'].remove("Glowing House")
             return about + "Your follower doesn't have the key to open the gate to the house."
     else:
-        return about
+        world['map']['Path F']['neighbors'].remove("Glowing House")
+        return about + "You don't have the key to the gate, so cannot go toward the house."
 
 def town(world, command):
     '''
