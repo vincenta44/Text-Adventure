@@ -1174,6 +1174,7 @@ The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. %s is fighting well behind you.
 The goblins manage to slice you and %s a little bit, but you manage the kill them.
 The goblin group is slain.
+You can take one of their shields for your journey.
 ''' % (follower, follower, follower)
         elif 'Upgraded Armor' in inventory:
             world['player']['health'] = world['player']['health'] - 2
@@ -1200,6 +1201,7 @@ and throw others off you back. You keep getting overwhelmed.
 The goblins manage to slice you as you fight, but with will and power
 you knock them all down..
 The goblin group is slain.
+You can take one of their shields for your journey.
 '''
         elif if_follower:
             world['player']['health'] = world['player']['health'] - 2
@@ -1226,6 +1228,7 @@ and throw others off you back. %s is fighting well behind you.
 The goblins manage to slice through your armor a lot,
 You and %s use up most of your energy, but you manage the kill them.
 The goblin group is slain.
+You can take one of their shields for your journey.
 ''' % (follower, follower, follower)
     elif 'Spells' in inventory:
         if ('Upgraded Armor' in inventory) and if_follower:
@@ -1251,6 +1254,7 @@ The goblins jump on you while you attack others, you blast down a few
 and throw others off you back. %s is fighting well behind you.
 The goblins manage to slice you and %s a little bit, but you manage the kill them.
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 ''' % (follower, follower, follower)
         elif 'Upgraded Armor' in inventory:
             world['player']['health'] = world['player']['health'] - 2
@@ -1276,6 +1280,7 @@ and throw others off you back. You keep getting overwhelmed.
 The goblins manage to slice you as you fight, but with will and power
 you knock them all down..
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 '''
         elif if_follower:
             world['player']['health'] = world['player']['health'] - 2
@@ -1302,6 +1307,7 @@ and throw others off you back. %s is fighting well behind you.
 The goblins manage to slice through your armor a lot,
 You and %s use up most of your energy, but you manage the kill them.
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 ''' % (follower, follower, follower)
     else:
         world['status'] = 'lost'
