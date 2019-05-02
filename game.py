@@ -1476,6 +1476,7 @@ def render_player(world):
         world['status'] = 'lost'
     return '''
 Your health is %s/5
+********************************************************************************************************************
 ''' % (health)
 
 def get_options(world):
