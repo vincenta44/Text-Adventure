@@ -24,7 +24,8 @@ get_options,
 goto,
 get,
 follow_path,
-follow_sound
+follow_sound,
+revive_follower
 )
 
 ###### Unit Tests #####
@@ -95,7 +96,7 @@ assert_equal(isinstance(map['Path A']['neighbors'], list), True)
 
 #render(x)
 test_world = create_world()
-assert_equal(render(test_world), '\nThere is a fork in the road\nTo the right is the path,\nto the left are the woods,\nand next to you is a path to a broken down house.\nYour health is 5/5\n')
+assert_equal(render(test_world), '\nThere is a fork in the road\nTo the right is the path,\nto the left are the woods,\nand next to you is a path to a broken down house.\nYour health is 5/5\n********************************************************************************************************************\n\n')
 assert_equal(render(test_world), render_location(test_world) + render_player(test_world))
 
 #render_location(x)
@@ -120,15 +121,15 @@ assert_equal(render_enemy(test_world), sound_c(test_world))
 
 #render_player(x)
 test_world = create_world()
-assert_equal(render_player(test_world), "Your health is 5/5\n")
+assert_equal(render_player(test_world), "Your health is 5/5\n********************************************************************************************************************\n")
 test_world['player']['health'] = 4
-assert_equal(render_player(test_world), "Your health is 4/5\n")
+assert_equal(render_player(test_world), "Your health is 4/5\n********************************************************************************************************************\n")
 test_world['player']['health'] = 3
-assert_equal(render_player(test_world), "Your health is 3/5\n")
+assert_equal(render_player(test_world), "Your health is 3/5\n********************************************************************************************************************\n")
 test_world['player']['health'] = 2
-assert_equal(render_player(test_world), "Your health is 2/5\n")
+assert_equal(render_player(test_world), "Your health is 2/5\n********************************************************************************************************************\n")
 test_world['player']['health'] = 1
-assert_equal(render_player(test_world), "Your health is 1/5\n")
+assert_equal(render_player(test_world), "Your health is 1/5\n********************************************************************************************************************\n")
 
 #tunnel(x)
 test_world = create_world()
@@ -343,7 +344,7 @@ The dragon focuses on Benedek and moves toward him.
 You move around the back while she's is distracted.
 She slaps you with her tail, but you block it with your shield.
 You shield flies away from you, but you move forward.
-you climb her and throws you off her tail onto the cave wall.
+You manage to climb her, but she throws you off her tail onto the cave wall.
 Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
 You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, you stab your sword through her.
@@ -865,6 +866,7 @@ The goblins jump on you while you attack others, you blast down a few
 and throw others off you back. Frons is fighting well behind you.
 The goblins manage to slice you and Frons a little bit, but you manage the kill them.
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 ''')
 assert_equal(test_world['map']['Path H']['about'], '''
 You are at a turn in the road.
@@ -890,6 +892,7 @@ and throw others off you back. You keep getting overwhelmed.
 The goblins manage to slice you as you fight, but with will and power
 you knock them all down..
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 ''')
 assert_equal(test_world['map']['Path H']['about'], '''
 You are at a turn in the road.
@@ -917,6 +920,7 @@ and throw others off you back. Frons is fighting well behind you.
 The goblins manage to slice through your armor a lot,
 You and Frons use up most of your energy, but you manage the kill them.
 The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
 ''')
 assert_equal(test_world['map']['Path H']['about'], '''
 You are at a turn in the road.
@@ -1087,7 +1091,15 @@ assert_equal(test_world['player']['location'], "Sound B")
 test_world = create_world()
 test_world['player']['location'] = 'Path H'
 test_world['player']['inventory'] = ["Armor", "Sword"]
-assert_equal(follow_sound(test_world, 'Follow the Sound'), "")
+assert_equal(follow_sound(test_world, 'Follow the Sound'), '''
+You followed the sound
+
+You walk to the sound and before you know it
+you are surrounded by a group of small goblins!
+
+You charge your spells, but that takes too long.
+Goblins jump all over you and stab you until you die.
+''')
 
 #follow_path(x, y)
 test_world = create_world()
@@ -1109,8 +1121,16 @@ You followed the path.
 ''')
 assert_equal(test_world['player']['location'], 'Path B')
 
-
 #revive_follower(x)
+test_world = create_world()
+test_world['player']['location'] = 'Path F'
+test_world['player']['inventory'] = ["Revive Potion", "Upgraded Armor", "Armor", "Sword"]
+test_world['player']['follower'] = False
+assert_equal(revive_follower(test_world), '''
+You revived your follower
+''')
+assert_equal(test_world['player']['follower'], True)
+assert_equal("Revive Potion" in test_world['player']['location'], False)
 
 #amulet(x)
 
