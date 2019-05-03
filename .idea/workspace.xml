@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
-    </list>
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="1426" column="26" selection-start-line="1426" selection-start-column="26" selection-end-line="1426" selection-end-column="26" />
+            <state relative-caret-position="1216">
+              <caret line="2017" column="25" selection-start-line="2017" selection-start-column="25" selection-end-line="2017" selection-end-column="25" />
               <folding>
                 <element signature="e#32#963#1" />
                 <element signature="e#1029#2336#0" />
@@ -72,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="262">
               <caret line="1134" column="10" lean-forward="true" selection-start-line="1134" selection-start-column="10" selection-end-line="1134" selection-end-column="10" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -199,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="791" />
@@ -340,7 +337,7 @@
       <workItem from="1556802897969" duration="1449000" />
       <workItem from="1556812774698" duration="112000" />
       <workItem from="1556813087660" duration="2840000" />
-      <workItem from="1556896815699" duration="2012000" />
+      <workItem from="1556896815699" duration="2277000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -556,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29121000" />
+    <option name="totallyTimeSpent" value="29386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +565,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="791" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="791" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.1602289" />
@@ -713,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="1426" column="26" selection-start-line="1426" selection-start-column="26" selection-end-line="1426" selection-end-column="26" />
+        <state relative-caret-position="1216">
+          <caret line="2017" column="25" selection-start-line="2017" selection-start-column="25" selection-end-line="2017" selection-end-column="25" />
           <folding>
             <element signature="e#32#963#1" />
             <element signature="e#1029#2336#0" />
@@ -764,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="262">
           <caret line="1134" column="10" lean-forward="true" selection-start-line="1134" selection-start-column="10" selection-end-line="1134" selection-end-column="10" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
