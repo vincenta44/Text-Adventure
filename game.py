@@ -662,7 +662,7 @@ You Died.
 You pull out your sword, puff out your armor and move forward.
 %s moves at your side. You both now charge.
 The dragon focuses on %s and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 She slaps you with her tail, but you block it with your shield.
 You shield flies away from you, but you move forward.
 You manage to climb her, but she throws you off her tail onto the cave wall.
@@ -1183,24 +1183,25 @@ def sound_c(world):
     if foll_num > 0:
         follower = create_follower['Follower ' + str(foll_num)]['Name']
     if 'Sword' in inventory:
-        if ('Upgraded Armor' in inventory) and if_follower:
-            world['player']['health'] = world['player']['health'] - 1
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
+        if "Armor" in inventory:
+            if ('Upgraded Armor' in inventory) and if_follower:
+                world['player']['health'] = world['player']['health'] - 1
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
 The goblins surround you and %s. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
-and throw others off you back. %s is fighting well behind you.
+and throw others off you back. %s is taking a beating next to you.
 The goblins manage to slice you and %s. You both start bleeding out.
 The goblins start gathering up and overcoming you.
 You both lay there and die.
 ''' % (follower, follower, follower)
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 '''
-                return '''
+                    return '''
 The goblins surround you and %s. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. %s is fighting well behind you.
@@ -1208,12 +1209,64 @@ The goblins manage to slice you and %s a little bit, but you manage the kill the
 The goblin group is slain.
 You can take one of their shields for your journey.
 ''' % (follower, follower, follower)
-        elif 'Upgraded Armor' in inventory:
-            world['player']['health'] = world['player']['health'] - 2
-
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
+            elif 'Upgraded Armor' in inventory:
+                world['player']['health'] = world['player']['health'] - 2
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
+The goblins surround you. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. You keep getting overwhelmed and your armor stops glowing.
+The goblins manage to slice you as you fight and you start bleeding out.
+You fall down and get overcome by goblins.
+You died.
+'''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+'''
+                    return '''
+The goblins surround you. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight, but with will and power
+you knock them all down..
+The goblin group is slain.
+You can take one of their shields for your journey.
+'''
+            elif if_follower:
+                world['player']['health'] = world['player']['health'] - 2
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
+The goblins surround you and %s. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. %s is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and %s use all of your energy and it's not enough.
+You get overcome by the goblins.
+You died.
+''' % (follower, follower, follower)
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+'''
+                    return '''
+The goblins surround you and %s. You pull out your sword and charge.
+The goblins jump on you while you attack others, you slash down a few
+and throw others off you back. %s is fighting well behind you.
+The goblins manage to slice through your armor a lot,
+You and %s use up most of your energy, but you manage the kill them.
+The goblin group is slain.
+You can take one of their shields for your journey.
+''' % (follower, follower, follower)
+            else:
+                world['player']['health'] = world['player']['health'] - 3
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
 The goblins surround you. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. You keep getting overwhelmed.
@@ -1221,59 +1274,32 @@ The goblins manage to slice you as you fight and you start bleeding out.
 You fall down and get overcome by goblins.
 You died.
 '''
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 '''
-                return '''
+                    return '''
 The goblins surround you. You pull out your sword and charge.
 The goblins jump on you while you attack others, you slash down a few
 and throw others off you back. You keep getting overwhelmed.
-The goblins manage to slice you as you fight, but with will and power
-you knock them all down..
-The goblin group is slain.
+The goblins manage to slice you really bad as you fight, but with will and power
+you knock them all down...The goblin group is slain.
 You can take one of their shields for your journey.
 '''
-        elif if_follower:
-            world['player']['health'] = world['player']['health'] - 2
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
-The goblins surround you and %s. You pull out your sword and charge.
-The goblins jump on you while you attack others, you slash down a few
-and throw others off you back. %s is fighting well behind you.
-The goblins manage to slice through your armor a lot,
-You and %s use all of your energy and it's not enough.
-You get overcome by the goblins.
-You died.
-''' % (follower, follower, follower)
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
-You are at a turn in the road.
-You are now standing in front of the Dragon's den.
-'''
-                return '''
-The goblins surround you and %s. You pull out your sword and charge.
-The goblins jump on you while you attack others, you slash down a few
-and throw others off you back. %s is fighting well behind you.
-The goblins manage to slice through your armor a lot,
-You and %s use up most of your energy, but you manage the kill them.
-The goblin group is slain.
-You can take one of their shields for your journey.
-''' % (follower, follower, follower)
         else:
             world['status'] = 'lost'
             return '''
-You charge your spells, but that takes too long.
+You bring out your sword and wave it around but there are too many.
 Goblins jump all over you and stab you until you die.
 '''
     elif 'Spells' in inventory:
-        if ('Upgraded Armor' in inventory) and if_follower:
-            world['player']['health'] = world['player']['health'] - 1
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
+        if "Armor" in inventory:
+            if ('Upgraded Armor' in inventory) and if_follower:
+                world['player']['health'] = world['player']['health'] - 1
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast down a few
 and throw others off you back. %s is fighting well behind you.
@@ -1281,12 +1307,12 @@ The goblins manage to slice you and %s. You guys start bleeding out.
 The goblins start gathering up and overcoming you.
 You both lay there and die.
 ''' % (follower, follower, follower)
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 '''
-                return '''
+                    return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast down a few
 and throw others off you back. %s is fighting well behind you.
@@ -1294,24 +1320,24 @@ The goblins manage to slice you and %s a little bit, but you manage the kill the
 The goblin group is slain.
 They have shields to take, but since you have spells you cannot take one.
 ''' % (follower, follower, follower)
-        elif 'Upgraded Armor' in inventory:
-            world['player']['health'] = world['player']['health'] - 2
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
+            elif 'Upgraded Armor' in inventory:
+                world['player']['health'] = world['player']['health'] - 2
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
 The goblins surround you. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast down a few
-and throw others off you back. You keep getting overwhelmed.
+and throw others off you back. You keep getting overwhelmed and you armor stops glowing.
 The goblins manage to slice you as you fight and start bleeding out.
 You fall down and get overcome by goblins.
 You died.
 '''
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 '''
-                return '''
+                    return '''
 The goblins surround you. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast down a few
 and throw others off you back. You keep getting overwhelmed.
@@ -1320,25 +1346,25 @@ you knock them all down..
 The goblin group is slain.
 They have shields to take, but since you have spells you cannot take one.
 '''
-        elif if_follower:
-            world['player']['health'] = world['player']['health'] - 2
-            if world['player']['health'] <= 0:
-                world['status'] = 'lost'
-                return '''
+            elif if_follower:
+                world['player']['health'] = world['player']['health'] - 2
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast a few down
-and throw others off you back. %s is fighting well behind you.
+and throw others off you back. %s not doing well behind you.
 The goblins manage to slice through your armor a lot,
 You and %s use all of your energy and it's not enough.
 You get overcome by the goblins.
 You died.
 ''' % (follower, follower, follower)
-            if world['status'] == 'playing':
-                world['map']['Path H']['about'] = '''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
 You are at a turn in the road.
 You are now standing in front of the Dragon's den.
 '''
-                return '''
+                    return '''
 The goblins surround you and %s. You stand your ground and charge your spells.
 The goblins jump on you while you attack others, you blast a few down
 and throw others off you back. %s is fighting well behind you.
@@ -1347,6 +1373,32 @@ You and %s use up most of your energy, but you manage the kill them.
 The goblin group is slain.
 They have shields to take, but since you have spells you cannot take one.
 ''' % (follower, follower, follower)
+            else:
+                world['player']['health'] = world['player']['health'] - 3
+                if world['player']['health'] <= 0:
+                    world['status'] = 'lost'
+                    return '''
+The goblins surround you. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight and you start bleeding out.
+You fall down and get overcome by goblins.
+You died.
+'''
+                if world['status'] == 'playing':
+                    world['map']['Path H']['about'] = '''
+You are at a turn in the road.
+You are now standing in front of the Dragon's den.
+'''
+                    return '''
+The goblins surround you. You stand your ground and charge your spells.
+The goblins jump on you while you attack others, you blast down a few
+and throw others off you back. You keep getting overwhelmed.
+The goblins manage to slice you as you fight, but with will and power
+you knock them all down..
+The goblin group is slain.
+They have shields to take, but since you have spells you cannot take one.
+'''
         else:
             world['status'] = 'lost'
             return '''
