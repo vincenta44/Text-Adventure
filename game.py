@@ -1103,7 +1103,7 @@ def glowing_house(world):
 The gate requires a key...you ask your Frons.
 He doesn't have anything. You can't get through.
 '''
-        if follower == "Benedek":
+        elif follower == "Benedek":
             location = 'Glowing House'
             world['player']['follower'] = False
             if "Armor" in inventory:
@@ -1131,7 +1131,7 @@ The gate requires a key. You ask %s.
 He looks in his bag and he pulls out a key.
 You put it in the door and it unlocks.
 ''' % (follower) + world['map']['Glowing House']['about']
-        if follower == "Adjorn":
+        elif follower == "Adjorn":
             location = 'Glowing House'
             if "Armor" in inventory:
                 world['map']['Glowing House']['about'] = '''
