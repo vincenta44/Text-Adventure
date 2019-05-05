@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-    </list>
+    <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,24 +13,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="1613" column="29" lean-forward="true" selection-start-line="1613" selection-start-column="29" selection-end-line="1613" selection-end-column="29" />
+            <state relative-caret-position="36">
+              <caret line="1570" selection-start-line="1570" selection-end-line="1570" />
               <folding>
                 <element signature="e#32#963#1" />
+                <element signature="e#1029#2343#0" />
                 <element signature="e#1029#1185#1" />
+                <element signature="e#2369#2612#0" />
+                <element signature="e#2639#2958#0" />
+                <element signature="e#2988#3610#0" />
+                <element signature="e#3634#11204#0" />
+                <element signature="e#11229#13615#0" />
+                <element signature="e#13638#15909#0" />
+                <element signature="e#15934#19927#0" />
+                <element signature="e#19958#21115#0" />
+                <element signature="e#21152#33773#0" />
+                <element signature="e#33811#40684#0" />
+                <element signature="e#40712#42194#0" />
+                <element signature="e#42226#46109#0" />
+                <element signature="e#46135#57496#0" />
+                <element signature="e#57521#58598#0" />
+                <element signature="e#58630#59942#0" />
+                <element signature="e#59967#60286#0" />
+                <element signature="e#60320#60823#0" />
+                <element signature="e#60854#61700#0" />
+                <element signature="e#61732#62267#0" />
+                <element signature="e#62297#64544#0" />
+                <element signature="e#64556#65460#0" />
+                <element signature="e#65491#67414#0" />
+                <element signature="e#67454#68294#0" />
+                <element signature="e#68333#69124#0" />
+                <element signature="e#69158#69650#0" />
+                <element signature="e#69675#71300#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="776" column="42" selection-start-line="776" selection-start-column="42" selection-end-line="776" selection-end-column="42" />
+            <state relative-caret-position="1478">
+              <caret line="1144" lean-forward="true" selection-start-line="1144" selection-end-line="1144" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <element signature="e#15406#15995#0" />
@@ -111,52 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.game">
-    <configuration name="game" type="PythonConfigurationType" factoryName="Python">
-      <module name="Text-Adventure" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests" type="PythonConfigurationType" factoryName="Python">
-      <module name="Text-Adventure" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
+  <component name="RunManager" selected="Python.game" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -181,7 +160,7 @@
       <workItem from="1556896815699" duration="2395000" />
       <workItem from="1556979532926" duration="383000" />
       <workItem from="1557056897071" duration="7675000" />
-      <workItem from="1557069656196" duration="241000" />
+      <workItem from="1557069656196" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -449,11 +428,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557069340855</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update">
+      <created>1557069951134</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1557069951134</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37803000" />
+    <option name="totallyTimeSpent" value="38089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,7 +459,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31383738" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31383738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39939487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,24 +597,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.py">
+    <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="1613" column="29" lean-forward="true" selection-start-line="1613" selection-start-column="29" selection-end-line="1613" selection-end-column="29" />
+        <state relative-caret-position="1478">
+          <caret line="1144" lean-forward="true" selection-start-line="1144" selection-end-line="1144" />
           <folding>
-            <element signature="e#32#963#1" />
-            <element signature="e#1029#1185#1" />
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#15406#15995#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
+    <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="776" column="42" selection-start-line="776" selection-start-column="42" selection-end-line="776" selection-end-column="42" />
+        <state relative-caret-position="36">
+          <caret line="1570" selection-start-line="1570" selection-end-line="1570" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#15406#15995#0" />
+            <element signature="e#32#963#1" />
+            <element signature="e#1029#2343#0" />
+            <element signature="e#1029#1185#1" />
+            <element signature="e#2369#2612#0" />
+            <element signature="e#2639#2958#0" />
+            <element signature="e#2988#3610#0" />
+            <element signature="e#3634#11204#0" />
+            <element signature="e#11229#13615#0" />
+            <element signature="e#13638#15909#0" />
+            <element signature="e#15934#19927#0" />
+            <element signature="e#19958#21115#0" />
+            <element signature="e#21152#33773#0" />
+            <element signature="e#33811#40684#0" />
+            <element signature="e#40712#42194#0" />
+            <element signature="e#42226#46109#0" />
+            <element signature="e#46135#57496#0" />
+            <element signature="e#57521#58598#0" />
+            <element signature="e#58630#59942#0" />
+            <element signature="e#59967#60286#0" />
+            <element signature="e#60320#60823#0" />
+            <element signature="e#60854#61700#0" />
+            <element signature="e#61732#62267#0" />
+            <element signature="e#62297#64544#0" />
+            <element signature="e#64556#65460#0" />
+            <element signature="e#65491#67414#0" />
+            <element signature="e#67454#68294#0" />
+            <element signature="e#68333#69124#0" />
+            <element signature="e#69158#69650#0" />
+            <element signature="e#69675#71300#0" />
           </folding>
         </state>
       </provider>
