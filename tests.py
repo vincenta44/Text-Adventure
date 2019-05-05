@@ -25,7 +25,8 @@ goto,
 get,
 follow_path,
 follow_sound,
-revive_follower
+revive_follower,
+amulet
 )
 
 ###### Unit Tests #####

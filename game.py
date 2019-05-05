@@ -1124,6 +1124,7 @@ You put it in the door and it unlocks.
 You are walking through the path and a spell casts %s into the air and when he lands he dies
 You mourn for a minute but move forward to the house.
 When you step in there is a large rumble but nothing happens.
+The only way now is back to the path.
 ''' % (follower)
                 return '''
 The gate requires a key. You ask %s.
@@ -1131,7 +1132,11 @@ He looks in his bag and he pulls out a key.
 You put it in the door and it unlocks.
 ''' % (follower) + world['map']['Glowing House']['about']
     else:
-        return None
+        return '''
+You try to pry the gate open but it doesn't budge.
+There is a key hole but you don't have a key.
+Looks like you can't go through.
+'''
 
 def sound_c(world):
     '''
@@ -1357,15 +1362,8 @@ You have a revive potion. You can use this to revive your follower.
             return '''
 You have made it back to the path.
 '''
-    elif if_follower:
-        if (follower == 'Benedek') or (follower == 'Adjorn'):
-            return about + "Your follower has a key to open the gate to the house."
-        else:
-            world['map']['Path F']['neighbors'].remove("Glowing House")
-            return about + "Your follower doesn't have the key to open the gate to the house."
     else:
-        world['map']['Path F']['neighbors'].remove("Glowing House")
-        return about + "You don't have the key to the gate, so cannot go toward the house."
+        return about
 
 def town(world, command):
     '''
