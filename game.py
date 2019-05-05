@@ -1103,14 +1103,14 @@ def glowing_house(world):
 The gate requires a key...you ask your Frons.
 He doesn't have anything. You can't get through.
 '''
-        if (follower == "Benedek") or (follower == "Adjorn"):
+        if follower == "Benedek":
             location = 'Glowing House'
             world['player']['follower'] = False
             if "Armor" in inventory:
                 world['map']['Glowing House']['about'] = '''
 You are walking through the path and a spell casts %s into the air and when he lands he dies
 You mourn for a minute but move forward to the house.
-When you step in there is a large rumble and your armor begins to glow.
+When you step in the house there is a large rumble and your armor begins to glow.
 You feel more powerful. The only way now is back to the path.
 ''' % (follower)
                 inventory.append("Upgraded Armor")
@@ -1123,7 +1123,34 @@ You put it in the door and it unlocks.
                 world['map']['Glowing House']['about'] = '''
 You are walking through the path and a spell casts %s into the air and when he lands he dies
 You mourn for a minute but move forward to the house.
-When you step in there is a large rumble but nothing happens.
+When you step in the house there is a large rumble but nothing happens.
+The only way now is back to the path.
+''' % (follower)
+                return '''
+The gate requires a key. You ask %s.
+He looks in his bag and he pulls out a key.
+You put it in the door and it unlocks.
+''' % (follower) + world['map']['Glowing House']['about']
+        if follower == "Adjorn":
+            location = 'Glowing House'
+            if "Armor" in inventory:
+                world['map']['Glowing House']['about'] = '''
+You are walking through the path and a spell casts %s into the air and he smacks up against a tree.
+His armor is strong so he wasn't injured. He slowly got himself together and got up to keep going.
+When you step in the house there is a large rumble and your armor begins to glow.
+You feel more powerful. The only way now is back to the path.
+''' % (follower)
+                inventory.append("Upgraded Armor")
+                return '''
+The gate requires a key. You ask %s
+He looks in his bag and he pulls out a key.
+You put it in the door and it unlocks.
+''' % (follower) + world['map']['Glowing House']['about']
+            else:
+                world['map']['Glowing House']['about'] = '''
+You are walking through the path and a spell casts %s into the air and he smacks up against a tree.
+His armor is strong so he wasn't injured. He slowly got himself together and got up to keep going.
+When you step in the house there is a large rumble but nothing happens.
 The only way now is back to the path.
 ''' % (follower)
                 return '''
