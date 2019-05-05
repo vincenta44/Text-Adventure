@@ -1381,8 +1381,9 @@ def path_f(world):
         follower = create_follower['Follower ' + str(foll_num)]['Name']
 
     if "Upgraded Armor" in inventory:
-        if "Revive Potion" in inventory:
-           return '''
+        if if_follower == False:
+            if "Revive Potion" in inventory:
+                return '''
 You have a revive potion. You can use this to revive your follower.
 '''
         else:
