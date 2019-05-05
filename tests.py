@@ -738,6 +738,8 @@ assert_equal(glowing_house(test_world), '''
 The gate requires a key...you ask your Frons.
 He doesn't have anything. You can't get through.
 ''')
+assert_equal("Glowing House" in test_world['map']['Path F']['neighbors'], False)
+assert_equal("Upgraded Armor" in test_world['player']['inventory'], False)
 
 test_world = create_world()
 test_world['player']['follower'] = True
@@ -752,7 +754,8 @@ You are walking through the path and a spell casts your follower into the air an
 You mourn for a minute but move forward to the house.
 When you step in there is a large rumble but nothing happens.
 ''')
-test_world['player']['follower'] = False
+assert_equal(test_world['player']['follower'], False)
+assert_equal("Upgraded Armor" in test_world['player']['inventory'], False)
 
 test_world = create_world()
 test_world['player']['inventory'] = ["Armor"]
@@ -763,7 +766,7 @@ The gate requires a key. You ask your follower.
 He looks in his bag and he pulls out a key.
 You put it in the door and it unlocks.
 ''' + test_world['map']['Glowing House']['about'])
-test_world['player']['follower'] = False
+assert_equal(test_world['player']['follower'], True)
 assert_equal(test_world['map']['Glowing House']['about'], '''
 You are walking through the path and a spell casts your follower into the air and when he lands he dies
 You mourn for a minute but move forward to the house.

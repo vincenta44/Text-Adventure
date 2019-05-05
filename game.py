@@ -46,15 +46,15 @@ def render_introduction():
                                          ==== By: Vincent Ains ====
 ********************************************************************************************************************
 Hello adventurer...you have quite a journey ahead of you.
-There is a dangerous Dragon in his Den up the path and through the magic gate.
-You have the job to kill it.
+There is a dangerous Dragon in her den up the path and through the magic gate.
+It has been terrorizing our villages for years and now you have to kill it!
 Be careful and move slowly throughout the path, once you go down it you can't go back.
 You have nothing, so anything you find on your way will be helpful.
-    I hear along the path there are secret compartments that some people hide pretty valuable items.
-    Not all places them, but those that do can prove very useful.
-    I have this amulet that can glows when there are secret places, however you can only use it 3 times and if you use
-    it all in random places and find nothing...well that's on you.
-Have a safe journey and do not come back without the Dragon's treasure.
+    Along the path there are secret areas that hold valuable items.
+    However, not all places have them...
+    Here is an amulet that can glow when there are secret places, however you can only use it 3 times
+    and if you use it all in random places and find nothing...well that's on you.
+Have a safe journey and kill that Dragon! By the way...DO NOT come back without the Dragon's treasure.
 ********************************************************************************************************************
 '''
           )
