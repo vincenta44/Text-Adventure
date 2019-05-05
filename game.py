@@ -56,8 +56,7 @@ You have nothing, so anything you find on your way will be helpful.
     and if you use it all in random places and find nothing...well that's on you.
 Have a safe journey and kill that Dragon! By the way...DO NOT come back without the Dragon's treasure.
 ********************************************************************************************************************
-'''
-          )
+''')
 
 def create_world():
     '''

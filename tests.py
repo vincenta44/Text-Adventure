@@ -32,21 +32,20 @@ amulet
 ###### Unit Tests #####
 
 #render_introduction()
-assert_equal('Hello adventurer...you have quite a journey ahead of you.' in render_introduction(), True)
 assert_equal(render_introduction(), '''
                                       ==== The Impossible Journey ====
                                          ==== By: Vincent Ains ====
 ********************************************************************************************************************
 Hello adventurer...you have quite a journey ahead of you.
-There is a dangerous Dragon in his Den up the path and through the magic gate.
-You have the job to kill it.
+There is a dangerous Dragon in her den up the path and through the magic gate.
+It has been terrorizing our villages for years and now you have to kill it!
 Be careful and move slowly throughout the path, once you go down it you can't go back.
 You have nothing, so anything you find on your way will be helpful.
-    I hear along the path there are secret compartments that some people hide pretty valuable items.
-    Not all places them, but those that do can prove very useful.
-    I have this amulet that can glows when there are secret places, however you can only use it 3 times and if you use
-    it all in random places and find nothing...well that's on you.
-Have a safe journey and do not come back without the Dragon's treasure.
+    Along the path there are secret areas that hold valuable items.
+    However, not all places have them...
+    Here is an amulet that can glow when there are secret places, however you can only use it 3 times
+    and if you use it all in random places and find nothing...well that's on you.
+Have a safe journey and kill that Dragon! By the way...DO NOT come back without the Dragon's treasure.
 ********************************************************************************************************************
 ''')
 
@@ -357,10 +356,10 @@ assert_equal(dragon_fight_sword(test_world), '''
 You pull out your sword, puff out your armor and move forward.
 Benedek moves at your side. You both now charge.
 The dragon focuses on Benedek and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 She slaps you with her tail, but you block it with your shield.
-You shield flies away from you, but you move forward.
-you climb her and throws you off her tail onto the cave wall.
+Your shield flies away from you, but you move forward.
+You manage to climb her, but she throws you off her tail onto the cave wall.
 Your armor stops glowing. Benedek take the opportunity and stabs her in the chest.
 You pick yourself up and run forward and jump onto her wing then to her back.
 You crawl up her neck and get to head, but you stumble and fall.
@@ -377,7 +376,7 @@ assert_equal(dragon_fight_sword(test_world), '''
 You pull out your sword, puff out your armor and move forward.
 Benedek moves at your side. You both now charge.
 The dragon focuses on Benedek and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 You jump up on her tail. In one motion she grabs Benedek with her teeth
 and throws you off her tail onto the cave wall.
 Benedek is on the ground not moving. Your armor stops glowing.
@@ -391,7 +390,7 @@ assert_equal(dragon_fight_sword(test_world), '''
 You pull out your sword, puff out your armor and move forward.
 Benedek moves at your side. You both now charge.
 The dragon focuses on Benedek and moves toward him.
-You move around the back while she's is distracted.
+You move around the back while she is distracted.
 You jump up on her tail. In one motion she grabs Benedek with her teeth
 and throws you off her tail onto the cave wall.
 Benedek is on the ground not moving. Your armor stops glowing.
