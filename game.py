@@ -1582,7 +1582,7 @@ def get_options(world):
     location = world['player']['location']
     here = world['map'][location]
     inventory = world['player']['inventory']
-    commands = ["Quit", "See Inventory"]
+    commands = []
     if_follower = world['player']['follower']
     inventory = world['player']['inventory']
     foll_num = world['player']['follower num']
@@ -1632,6 +1632,8 @@ def get_options(world):
     if here == 'Sound C':
         if "Spells" in inventory:
             commands.remove("Get Shield")
+    commands.append("See Inventory")
+    commands.append("Quit")
     return commands
 
 def goto(world, command):
