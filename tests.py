@@ -757,6 +757,7 @@ assert_equal(test_world['player']['follower'], False)
 assert_equal("Upgraded Armor" in test_world['player']['inventory'], False)
 
 test_world = create_world()
+test_world['player']['location'] = "Path F"
 test_world['player']['inventory'] = ["Armor"]
 test_world['player']['follower'] = True
 test_world['player']['follower num'] = 1
@@ -773,6 +774,9 @@ When you step in there is a large rumble and your armor begins to glow.
 You feel more powerful. The only way now is back to the path.
 ''')
 assert_equal("Upgraded Armor" in test_world['player']['inventory'], True)
+assert_equal(render_location(test_world), '''
+You have made it back to the path.
+''')
 
 #sound_c(x)
 test_world = create_world()

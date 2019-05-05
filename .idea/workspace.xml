@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e34a00b8-896c-470e-acd9-e25b72136452" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +16,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
+            <state relative-caret-position="-491">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#32#963#1" />
+                <element signature="e#1029#2336#0" />
+                <element signature="e#1029#1185#1" />
                 <element signature="e#2362#2605#0" />
                 <element signature="e#2632#2951#0" />
                 <element signature="e#2981#3603#0" />
@@ -37,7 +38,6 @@
                 <element signature="e#40707#42189#0" />
                 <element signature="e#42221#45963#0" />
                 <element signature="e#44568#53265#0" />
-                <element signature="e#54852#55937#0" />
                 <element signature="e#54845#56157#0" />
                 <element signature="e#56182#56501#0" />
                 <element signature="e#56535#57038#0" />
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4115">
-              <caret line="757" column="74" lean-forward="true" selection-start-line="757" selection-start-column="74" selection-end-line="757" selection-end-column="74" />
+            <state relative-caret-position="260">
+              <caret line="776" column="42" selection-start-line="776" selection-start-column="42" selection-end-line="776" selection-end-column="42" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <element signature="e#571#1697#0" />
@@ -97,8 +97,8 @@
                 <element signature="e#12869#13020#0" />
                 <element signature="e#13151#13426#0" />
                 <element signature="e#13709#14395#0" />
-                <element signature="e#14519#15198#0" />
-                <element signature="e#15471#16062#0" />
+                <element signature="e#14440#15147#0" />
+                <element signature="e#15406#15995#0" />
                 <element signature="e#16186#16785#0" />
                 <element signature="e#16977#17494#0" />
                 <element signature="e#17618#18094#0" />
@@ -126,6 +126,7 @@
                 <element signature="e#31878#32105#0" />
                 <element signature="e#32344#32482#0" />
                 <element signature="e#32629#32928#0" />
+                <element signature="e#33277#33284#0" />
                 <element signature="e#33359#33687#0" />
                 <element signature="e#33740#33829#0" />
                 <element signature="e#33901#34267#0" />
@@ -181,8 +182,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../../School/CISC 108/Text Adventure Game.py" />
-        <option value="$PROJECT_DIR$/tests.py" />
         <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/tests.py" />
       </list>
     </option>
   </component>
@@ -196,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="791" />
@@ -339,7 +340,7 @@
       <workItem from="1556813087660" duration="2840000" />
       <workItem from="1556896815699" duration="2395000" />
       <workItem from="1556979532926" duration="383000" />
-      <workItem from="1557056897071" duration="5134000" />
+      <workItem from="1557056897071" duration="5919000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -579,11 +580,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557066233450</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update">
+      <created>1557066852451</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1557066852451</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update">
+      <created>1557067383994</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557067383994</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35021000" />
+    <option name="totallyTimeSpent" value="35806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,7 +610,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="791" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="796" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.16452074" />
@@ -603,7 +618,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31616595" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31392047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39939487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -675,12 +690,12 @@
     <MESSAGE value="added unit tests" />
     <MESSAGE value="update unit tests" />
     <MESSAGE value="glowing_house different for each follower" />
-    <MESSAGE value="update" />
     <MESSAGE value="update path_f to work with Adjorn follower #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="update path_f to work with Adjorn follower #1" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1557066599371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text_Adventure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1557067606043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Text_Adventure$Text_Adventure_Game.coverage" NAME="Text Adventure Game Coverage Results" MODIFIED="1556803635523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../School/CISC 108" />
     <SUITE FILE_PATH="coverage/Text_Adventure$game.coverage" NAME="game Coverage Results" MODIFIED="1557066241357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -740,10 +755,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#32#963#1" />
+            <element signature="e#1029#2336#0" />
+            <element signature="e#1029#1185#1" />
+            <element signature="e#2362#2605#0" />
+            <element signature="e#2632#2951#0" />
+            <element signature="e#2981#3603#0" />
+            <element signature="e#3627#11197#0" />
+            <element signature="e#11222#13608#0" />
+            <element signature="e#13631#15902#0" />
+            <element signature="e#15927#19920#0" />
+            <element signature="e#19951#21108#0" />
+            <element signature="e#21145#33768#0" />
+            <element signature="e#33806#40679#0" />
+            <element signature="e#40707#42189#0" />
+            <element signature="e#42221#45963#0" />
+            <element signature="e#44568#53265#0" />
+            <element signature="e#54845#56157#0" />
+            <element signature="e#56182#56501#0" />
+            <element signature="e#56535#57038#0" />
+            <element signature="e#57069#57915#0" />
+            <element signature="e#57947#58482#0" />
+            <element signature="e#58512#60739#0" />
+            <element signature="e#60771#61675#0" />
+            <element signature="e#61706#63629#0" />
+            <element signature="e#63669#64509#0" />
+            <element signature="e#64548#65339#0" />
+            <element signature="e#65373#65865#0" />
+            <element signature="e#65890#67515#0" />
+            <element signature="e#67547#67875#0" />
+            <element signature="e#67906#68405#0" />
+            <element signature="e#68434#68784#0" />
+            <element signature="e#68814#69237#0" />
+            <element signature="e#69271#71178#0" />
+            <element signature="e#69271#69648#1" />
+            <element signature="e#71210#71660#0" />
+            <element signature="e#71696#73300#0" />
+            <element signature="e#73327#73952#0" />
+            <element signature="e#73995#74819#0" />
+            <element signature="e#74832#74932#0" />
+            <element signature="e#74978#75397#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4115">
-          <caret line="757" column="74" lean-forward="true" selection-start-line="757" selection-start-column="74" selection-end-line="757" selection-end-column="74" />
+        <state relative-caret-position="260">
+          <caret line="776" column="42" selection-start-line="776" selection-start-column="42" selection-end-line="776" selection-end-column="42" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
             <element signature="e#571#1697#0" />
@@ -769,8 +833,8 @@
             <element signature="e#12869#13020#0" />
             <element signature="e#13151#13426#0" />
             <element signature="e#13709#14395#0" />
-            <element signature="e#14519#15198#0" />
-            <element signature="e#15471#16062#0" />
+            <element signature="e#14440#15147#0" />
+            <element signature="e#15406#15995#0" />
             <element signature="e#16186#16785#0" />
             <element signature="e#16977#17494#0" />
             <element signature="e#17618#18094#0" />
@@ -798,6 +862,7 @@
             <element signature="e#31878#32105#0" />
             <element signature="e#32344#32482#0" />
             <element signature="e#32629#32928#0" />
+            <element signature="e#33277#33284#0" />
             <element signature="e#33359#33687#0" />
             <element signature="e#33740#33829#0" />
             <element signature="e#33901#34267#0" />
@@ -839,54 +904,6 @@
             <element signature="e#46386#46553#0" />
             <element signature="e#46738#46768#0" />
             <element signature="e#47093#47126#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
-          <folding>
-            <element signature="e#32#963#1" />
-            <element signature="e#2362#2605#0" />
-            <element signature="e#2632#2951#0" />
-            <element signature="e#2981#3603#0" />
-            <element signature="e#3627#11197#0" />
-            <element signature="e#11222#13608#0" />
-            <element signature="e#13631#15902#0" />
-            <element signature="e#15927#19920#0" />
-            <element signature="e#19951#21108#0" />
-            <element signature="e#21145#33768#0" />
-            <element signature="e#33806#40679#0" />
-            <element signature="e#40707#42189#0" />
-            <element signature="e#42221#45963#0" />
-            <element signature="e#44568#53265#0" />
-            <element signature="e#54852#55937#0" />
-            <element signature="e#54845#56157#0" />
-            <element signature="e#56182#56501#0" />
-            <element signature="e#56535#57038#0" />
-            <element signature="e#57069#57915#0" />
-            <element signature="e#57947#58482#0" />
-            <element signature="e#58512#60739#0" />
-            <element signature="e#60771#61675#0" />
-            <element signature="e#61706#63629#0" />
-            <element signature="e#63669#64509#0" />
-            <element signature="e#64548#65339#0" />
-            <element signature="e#65373#65865#0" />
-            <element signature="e#65890#67515#0" />
-            <element signature="e#67547#67875#0" />
-            <element signature="e#67906#68405#0" />
-            <element signature="e#68434#68784#0" />
-            <element signature="e#68814#69237#0" />
-            <element signature="e#69271#71178#0" />
-            <element signature="e#69271#69648#1" />
-            <element signature="e#71210#71660#0" />
-            <element signature="e#71696#73300#0" />
-            <element signature="e#73327#73952#0" />
-            <element signature="e#73995#74819#0" />
-            <element signature="e#74832#74932#0" />
-            <element signature="e#74978#75397#0" />
           </folding>
         </state>
       </provider>
