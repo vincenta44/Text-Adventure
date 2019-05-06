@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="1570" selection-start-line="1570" selection-end-line="1570" />
+            <state relative-caret-position="135">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#32#963#1" />
                 <element signature="e#1029#2343#0" />
@@ -41,13 +41,21 @@
                 <element signature="e#60320#60823#0" />
                 <element signature="e#60854#61700#0" />
                 <element signature="e#61732#62267#0" />
-                <element signature="e#62297#64544#0" />
-                <element signature="e#64556#65460#0" />
-                <element signature="e#65491#67414#0" />
-                <element signature="e#67454#68294#0" />
-                <element signature="e#68333#69124#0" />
-                <element signature="e#69158#69650#0" />
-                <element signature="e#69675#71300#0" />
+                <element signature="e#62297#64566#0" />
+                <element signature="e#64598#65502#0" />
+                <element signature="e#65533#67456#0" />
+                <element signature="e#67496#68336#0" />
+                <element signature="e#68375#69166#0" />
+                <element signature="e#69200#69692#0" />
+                <element signature="e#69717#71342#0" />
+                <element signature="e#71374#71702#0" />
+                <element signature="e#71733#72232#0" />
+                <element signature="e#72261#72611#0" />
+                <element signature="e#72641#73064#0" />
+                <element signature="e#73098#75005#0" />
+                <element signature="e#75037#75487#0" />
+                <element signature="e#75523#77127#0" />
+                <element signature="e#77154#77779#0" />
               </folding>
             </state>
           </provider>
@@ -56,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1478">
-              <caret line="1144" lean-forward="true" selection-start-line="1144" selection-end-line="1144" />
+            <state relative-caret-position="16725">
+              <caret line="1144" selection-start-line="1144" selection-end-line="1144" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <element signature="e#15406#15995#0" />
@@ -93,13 +101,14 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="793" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,7 +120,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +143,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.game" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -161,6 +168,7 @@
       <workItem from="1556979532926" duration="383000" />
       <workItem from="1557056897071" duration="7675000" />
       <workItem from="1557069656196" duration="527000" />
+      <workItem from="1557155478337" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1556578143172</created>
@@ -439,7 +447,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38089000" />
+    <option name="totallyTimeSpent" value="38310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,10 +459,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="791" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49775785" visible="true" weight="0.16881259" />
       <window_info id="Structure" order="1" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info id="Favorites" order="2" sideWeight="0.50224215" side_tool="true" weight="0.2525399" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -597,21 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1478">
-          <caret line="1144" lean-forward="true" selection-start-line="1144" selection-end-line="1144" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#15406#15995#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1570" selection-start-line="1570" selection-end-line="1570" />
+        <state relative-caret-position="135">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#32#963#1" />
             <element signature="e#1029#2343#0" />
@@ -635,13 +632,32 @@
             <element signature="e#60320#60823#0" />
             <element signature="e#60854#61700#0" />
             <element signature="e#61732#62267#0" />
-            <element signature="e#62297#64544#0" />
-            <element signature="e#64556#65460#0" />
-            <element signature="e#65491#67414#0" />
-            <element signature="e#67454#68294#0" />
-            <element signature="e#68333#69124#0" />
-            <element signature="e#69158#69650#0" />
-            <element signature="e#69675#71300#0" />
+            <element signature="e#62297#64566#0" />
+            <element signature="e#64598#65502#0" />
+            <element signature="e#65533#67456#0" />
+            <element signature="e#67496#68336#0" />
+            <element signature="e#68375#69166#0" />
+            <element signature="e#69200#69692#0" />
+            <element signature="e#69717#71342#0" />
+            <element signature="e#71374#71702#0" />
+            <element signature="e#71733#72232#0" />
+            <element signature="e#72261#72611#0" />
+            <element signature="e#72641#73064#0" />
+            <element signature="e#73098#75005#0" />
+            <element signature="e#75037#75487#0" />
+            <element signature="e#75523#77127#0" />
+            <element signature="e#77154#77779#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16725">
+          <caret line="1144" selection-start-line="1144" selection-end-line="1144" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#15406#15995#0" />
           </folding>
         </state>
       </provider>
