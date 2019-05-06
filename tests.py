@@ -1141,6 +1141,7 @@ assert_equal("Revive Potion" in test_world['player']['location'], False)
 
 #amulet(x)
 
+
 #see_inventory(x)
 
 #learn_spells(x)
