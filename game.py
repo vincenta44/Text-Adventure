@@ -777,7 +777,7 @@ The dragon focuses on you and moves toward you.
 %s moves around out of her vision.
 She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
-Your glowing armor fades away. She focuses on %s
+Your armor dents and crumbles. She focuses on %s
 You pick yourself up and run forward and bash her head with your shield.
 Now you both mount her wings and slash her.
 You stumble and try to grab %s, but you knock him off and he lands and dies.
@@ -794,7 +794,7 @@ The dragon focuses on you and moves toward you.
 %s moves around out of her vision.
 She clamps on you with her jaw and flails you around.
 %s stabs her from behind and she lets go of you.
-Your glowing armor fades away. She focuses on %s
+Your armor dents and crumbles. She focuses on %s
 You pick yourself up and run forward and bash her head with your shield.
 Now you both mount her wings and slash her.
 Together you stab her neck...she flies up...
@@ -852,7 +852,7 @@ It blocks the fire but burns and melts.
 You realize you shield is gone so you charge again.
 You jump on her wing and on to her back, you climb up her neck,
 but stumble off and fall to the ground.
-She stand over you and eat you.
+She stands over you and eats you.
 You Died.
 '''
             if world['status'] == 'playing':
